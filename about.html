@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Franklin Soncco</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-gradient" data-en="Franklin Soncco" data-es="Franklin Soncco">Franklin Soncco</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+                <a href="research.html" data-en="Research & Academia" data-es="Investigación y Academia">Research & Academia</a>
+                <a href="skills.html" data-en="Skills & Projects" data-es="Habilidades y Proyectos">Skills & Projects</a>
+                <a href="experience.html" data-en="Experience" data-es="Experiencia">Experience</a>
+                <a href="about.html" class="active" data-en="About" data-es="Acerca de">About</a>
+                <button class="lang-toggle" id="langToggle">
+                    <span class="lang-option active" data-lang="en">EN</span>
+                    <span class="separator">|</span>
+                    <span class="lang-option" data-lang="es">ES</span>
+                </button>
+            </div>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 data-en="About Me" data-es="Acerca de Mí">About Me</h1>
+            <p data-en="Education, certifications, and contact information" data-es="Educación, certificaciones e información de contacto">Education, certifications, and contact information</p>
+        </div>
+    </section>
+
+    <section class="education">
+        <div class="container">
+            <h2 class="section-title" data-en="Education" data-es="Educación">Education</h2>
+            
+            <div class="education-card">
+                <div class="edu-icon">
+                    <img src="images/utec.png" alt="UTEC Logo">
+                </div>
+                <div class="edu-content">
+                    <h3 data-en="Mechatronics Engineering" data-es="Ingeniería Mecatrónica">Mechatronics Engineering</h3>
+                    <p class="edu-institution" data-en="University of Engineering and Technology (UTEC)" data-es="Universidad de Ingeniería y Tecnología (UTEC)">University of Engineering and Technology (UTEC)</p>
+                    <p class="edu-period">2021 - <span data-en="Present" data-es="Presente">Present</span> | <span data-en="9th Semester" data-es="9° Semestre">9th Semester</span></p>
+                    <div class="edu-details">
+                        <span class="badge" data-en="Top Third" data-es="Tercio Superior">Top Third</span>
+                        <span class="badge" data-en="Beca 18 Scholar" data-es="Becario Beca 18">Beca 18 Scholar</span>
+                    </div>
+                    <div class="specializations">
+                        <p><strong data-en="Specializations:" data-es="Especializaciones:">Specializations:</strong></p>
+                        <div class="spec-tags">
+                            <span data-en="Advanced Robotics" data-es="Robótica Avanzada">Advanced Robotics ✓</span>
+                            <span data-en="Industrial Mechatronics (90% complete)" data-es="Mecatrónica Industrial (90% completado)">Industrial Mechatronics (90% complete)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-card">
+                <!-- <div class="edu-icon">📚</div>  -->
+                <div class="edu-icon"><img src="images/colegio.png" alt="Icon"></div>
+                <div class="edu-content">
+                    <h3 data-en="High School" data-es="Educación Secundaria">High School</h3>
+                    <p class="edu-institution">I.E. Santa Rita de Siguas</p>
+                    <p class="edu-period">2016 - 2020</p>
+                    <div class="edu-details">
+                        <span class="badge" data-en="Graduated top of my class" data-es="Primer Puesto">Graduated top of my class</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certifications">
+        <div class="container">
+            <h2 class="section-title" data-en="Certifications & Awards" data-es="Certificaciones y Premios">Certifications & Awards</h2>
+            
+            <div class="cert-categories">
+                <button class="cert-tab active" data-category="all" data-en="All" data-es="Todas">All</button>
+                <button class="cert-tab" data-category="professional" data-en="Professional" data-es="Profesionales">Professional</button>
+                <button class="cert-tab" data-category="academic" data-en="Academic" data-es="Académicas">Academic</button>
+                <button class="cert-tab" data-category="awards" data-en="Awards" data-es="Premios">Awards</button>
+            </div>
+
+            <div class="cert-grid">
+                <!-- Professional Certifications -->
+                <div class="cert-card" data-category="professional">
+                    <div class="cert-icon">🏆</div>
+                    <h3 data-en="ISO 31000:2018 & 31010:2019 Risk Management" data-es="Gestión de Riesgos ISO 31000:2018 y 31010:2019">ISO 31000:2018 & 31010:2019 Risk Management</h3>
+                    <p class="cert-issuer">INTELLECTTA</p>
+                    <!-- Update with actual certification filename -->
+                    <button class="view-cert-btn" data-cert="certifications/iso31000.webp" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
+                </div>
+
+                <div class="cert-card" data-category="professional">
+                    <div class="cert-icon">🏆</div>
+                    <h3 data-en="Behavior-Based Safety Management (SBC)" data-es="Gestión de Seguridad Basada en el Comportamiento (SBC)">Behavior-Based Safety Management (SBC)</h3>
+                    <p class="cert-issuer">INTELLECTTA</p>
+                    <button class="view-cert-btn" data-cert="certifications/sbc.webp" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
+                </div>
+
+                <div class="cert-card" data-category="professional">
+                    <div class="cert-icon">🏆</div>
+                    <h3 data-en="Internal Auditor SIG - ISO 9001:2015, 14001:2015, 45001:2018" data-es="Auditor Interno SIG - ISO 9001:2015, 14001:2015, 45001:2018">Internal Auditor SIG - ISO 9001:2015, 14001:2015, 45001:2018</h3>
+                    <p class="cert-issuer">INTELLECTTA</p>
+                    <button class="view-cert-btn" data-cert="certifications/auditor-interno.webp" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
+                </div>
+
+                <div class="cert-card" data-category="professional">
+                    <div class="cert-icon">🏆</div>
+                    <h3 data-en="Integrated Management Systems - ISO 9001, 14001, 45001" data-es="Sistemas Integrados de Gestión - ISO 9001, 14001, 45001">Integrated Management Systems - ISO 9001, 14001, 45001</h3>
+                    <p class="cert-issuer">INTELLECTTA</p>
+                    <button class="view-cert-btn" data-cert="certifications/sig.webp" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
+                </div>
+
+                <!-- Academic Certifications -->
+                <div class="cert-card" data-category="academic">
+                    <div class="cert-icon">📜</div>
+                    <h3 data-en="Mechanical Design with Parametric, Shape, and Topology Optimization" data-es="Diseño Mecánico con Optimización Paramétrica, de Forma y Topológica">Mechanical Design with Parametric, Shape, and Topology Optimization</h3>
+                    <p class="cert-issuer">UTEC</p>
+                    <button class="view-cert-btn" data-cert="certifications/optimization.pdf" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
+                </div>
+
+                <div class="cert-card" data-category="academic">
+                    <div class="cert-icon">📜</div>
+                    <h3 data-en="Advanced Robotics Specialization" data-es="Especialización en Robótica Avanzada">Advanced Robotics Specialization</h3>
+                    <p class="cert-issuer">UTEC</p>
+                    <button class="view-cert-btn" data-cert="certifications/robotica-avanzada.pdf" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
+                </div>
+
+                <div class="cert-card" data-category="academic">
+                    <div class="cert-icon">📜</div>
+                    <h3 data-en="Introduction to IoT" data-es="Introducción a IoT">Introduction to IoT</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <button class="view-cert-btn" data-cert="certifications/iot.pdf" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
+                </div>
+
+                <div class="cert-card" data-category="academic">
+                    <div class="cert-icon">📜</div>
+                    <h3 data-en="Introduction to Artificial Intelligence for Students" data-es="Introducción a la Inteligencia Artificial para Estudiantes">Introduction to Artificial Intelligence for Students</h3>
+                    <p class="cert-issuer">UTEC</p>
+                    <button class="view-cert-btn" data-cert="certifications/ia.pdf" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
+                </div>
+
+                <div class="cert-card" data-category="academic">
+                    <div class="cert-icon">📜</div>
+                    <h3 data-en="Digital Skills for Students" data-es="Competencias Digitales para Estudiantes">Digital Skills for Students</h3>
+                    <p class="cert-issuer">UTEC</p>
+                    <button class="view-cert-btn" data-cert="certifications/digcomp.pdf" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
+                </div>
+
+                <!-- Awards -->
+                <!-- <div class="cert-card" data-category="awards">
+                    <div class="cert-icon">🥇</div>
+                    <h3 data-en="ICPC Pacific Northwest Top 10" data-es="ICPC Pacífico Noroeste Top 10">ICPC Pacific Northwest Top 10</h3>
+                    <p class="cert-issuer" data-en="International Collegiate Programming Contest" data-es="Concurso Internacional de Programación Universitaria">International Collegiate Programming Contest</p>
+                </div>
+
+                <div class="cert-card" data-category="awards">
+                    <div class="cert-icon">🥇</div>
+                    <h3 data-en="William Lowell Putnam Mathematical Competition Top 200" data-es="Competencia Matemática William Lowell Putnam Top 200">William Lowell Putnam Mathematical Competition Top 200</h3>
+                    <p class="cert-issuer" data-en="Mathematical Association of America" data-es="Asociación Matemática de América">Mathematical Association of America</p>
+                </div>
+
+                <div class="cert-card" data-category="awards">
+                    <div class="cert-icon">🥈</div>
+                    <h3 data-en="Chinese Mathematics Olympiad (CMO) Silver Medal" data-es="Olimpiada Matemática China (CMO) Medalla de Plata">Chinese Mathematics Olympiad (CMO) Silver Medal</h3>
+                    <p class="cert-issuer" data-en="Chinese Mathematical Society" data-es="Sociedad Matemática China">Chinese Mathematical Society</p>
+                </div>   -->
+
+                <div class="cert-card" data-category="awards">
+                    <div class="cert-icon">🥇</div>
+                    <h3 data-en="Graduated top of my class" data-es="Primer puesto de promoción">Graduated top of my class</h3>
+                    <p class="cert-issuer">I.E. Santa Rita de Siguas</p>
+                    <button class="view-cert-btn" data-cert="certifications/colegio.pdf" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
+                </div>   
+
+                <div class="cert-card" data-category="awards">
+                    <div class="cert-icon">🥇</div>
+                    <h3 data-en="Recipient of Scholarship 18" data-es="Acreedor Beca 18">Recipient of Scholarship 18</h3>
+                    <p class="cert-issuer" data-en="Programa Nacional de Becas (PRONABEC)" data-es="Programa Nacional de Becas (PRONABEC)">Programa Nacional de Becas (PRONABEC)</p>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Modal -->
+    <div id="certModal" class="cert-modal">
+        <div class="cert-modal-content">
+            <span class="cert-modal-close">&times;</span>
+            <div class="cert-modal-body">
+                <iframe id="certViewer" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <section class="languages">
+        <div class="container">
+            <h2 class="section-title" data-en="Languages" data-es="Idiomas">Languages</h2>
+            <div class="lang-grid">
+                <div class="lang-card">
+                    <h3 data-en="Spanish" data-es="Español">Spanish</h3>
+                    <p data-en="Native" data-es="Nativo">Native</p>
+                </div>
+                <div class="lang-card">
+                    <h3 data-en="Quechua" data-es="Quechua">Quechua</h3>
+                    <p data-en="Native" data-es="Nativo">Native</p>
+                </div>
+                <div class="lang-card">
+                    <h3 data-en="English" data-es="Inglés">English</h3>
+                    <p>B2 (TOEFL ITP)</p>
+                </div>
+                <div class="lang-card">
+                    <h3 data-en="Russian" data-es="Ruso">Russian</h3>
+                    <p data-en="A1 (Learning)" data-es="A1 (Aprendiendo)">A1 (Learning)</p>
+                </div>
+                <div class="lang-card">
+                    <h3 data-en="Mandarin Chinese" data-es="Chino Mandarín">Mandarin Chinese</h3>
+                    <p data-en="Beginner (Learning)" data-es="Principiante (Aprendiendo)">Beginner (Learning)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title" data-en="Contact Me" data-es="Contáctame">Contact Me</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon"><img src="images/gmail.webp" alt="Icon"></div>
+                    <h3 data-en="Email" data-es="Correo">Email</h3>
+                    <!-- Replace with your actual email -->
+                    <a href="mailto:franklin.soncco@utec.edu.pe">franklin.soncco@utec.edu.pe</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon"><img src="images/lideklin.png" alt="Icon"></div>
+                    <h3>LinkedIn</h3>
+                    <!-- Replace with your actual LinkedIn -->
+                    <a href="https://www.linkedin.com/in/franklin-david-soncco-machaca/" target="_blank">linkedin.com/in/franklin-david-soncco-machaca</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon"><img src="images/microscopio.jpg" alt="Icon"></div>
+                    <h3>ORCID</h3>
+                    <!-- Replace with your actual ORCID -->
+                    <a href="https://orcid.org/0009-0009-8311-2465" target="_blank">orcid.org/0009-0009-8311-2465</a>
+                </div>
+                <div class="contact-card">
+                    <!--<div class="contact-icon">💻</div>  -->
+                    <div class="contact-icon"><img src="images/programing.png" alt="Icon"></div>
+                    <h3>GitHub</h3>
+                    <!-- Replace with your actual GitHub -->
+                    <a href="https://github.com/FranklinSoncco" target="_blank">github.com/FranklinSoncco</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3 data-en="Franklin Soncco" data-es="Franklin Soncco">Franklin Soncco</h3>
+                    <p data-en="Robotics Researcher & Mechatronics Engineer" data-es="Investigador en Robótica e Ingeniero Mecatrónico">Robotics Researcher & Mechatronics Engineer</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="mailto:franklin.soncco@utec.edu.pe" target="_blank" title="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/franklin-david-soncco-machaca/" target="_blank" title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                        <a href="https://orcid.org/0009-0009-8311-2465" target="_blank" title="ORCID">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 4.053-1.666 4.053-3.722 0-2.056-1.694-3.722-4.053-3.722h-2.297z"/></svg>
+                        </a>
+                        <a href="https://github.com/FranklinSoncco" target="_blank" title="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span data-en="Franklin Soncco. All rights reserved." data-es="Franklin Soncco. Todos los derechos reservados.">Franklin Soncco. All rights reserved.</span></p>
+                <!-- <p class="visitor-counter" data-en="Visits: " data-es="Visitas: ">Visits: <span id="visitCount">0</span></p>  -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
