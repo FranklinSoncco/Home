@@ -122,7 +122,7 @@
                     <span>Model Predictive Control (MPC)</span>
                     <span>Nonlinear Control</span>
                     <span>Intelligent Control</span>
-                    <span>Cascade Control</span>
+                    <span>Process Control</span>
                 </div>
             </div>
 
@@ -147,141 +147,285 @@
             <h2 class="section-title" data-en="Project Portfolio" data-es="Portafolio de Proyectos">Project Portfolio</h2>
             
             <div class="projects-grid">
+
+
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-en="Autonomous Grape Harvesting Robot" data-es="Robot Autónomo de Cosecha de Uvas">Autonomous Grape Harvesting Robot</h3>
-                        <span class="project-tag" data-en="Embedded Systems" data-es="Sistemas Embebidos">Embedded Systems</span>
+                    <div class="project-evidence">
+                        <img src="projects/graperobot.jpeg" alt="Grape Robot">
                     </div>
-                    <p data-en="4DOF robotic arm for autonomous grape harvesting using ATMEGA328, PSoC 5LP, and Raspberry Pi4." data-es="Brazo robótico de 4DOF para cosecha autónoma de uvas usando ATMEGA328, PSoC 5LP y Raspberry Pi4.">4DOF robotic arm for autonomous grape harvesting using ATMEGA328, PSoC 5LP, and Raspberry Pi4.</p>
-                    <div class="project-tech">
-                        <span>ATMEGA328</span>
-                        <span>PSoC 5LP</span>
-                        <span>Raspberry Pi</span>
-                        <span>C/Assembly</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Autonomous Grape Harvesting Robot</h3>
+                            <span class="project-tag">Embedded Systems</span>
+                        </div>
+                        <p>4DOF robotic arm for autonomous grape harvesting using ATMEGA328, PSoC 5LP, and Raspberry Pi4.</p>
+                        <div class="project-tech">
+                            <span>ATMEGA328</span>
+                            <span>PSoC 5LP</span>
+                            <span>Raspberry Pi</span>
+                            <span>C/Assembly</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-en="8-bit ALU Implementation" data-es="Implementación de ALU de 8 bits">8-bit ALU Implementation</h3>
-                        <span class="project-tag" data-en="Digital Circuits" data-es="Circuitos Digitales">Digital Circuits</span>
+                    <div class="project-evidence">
+                        <video controls poster="images/alu-thumbnail.jpg">
+                            <source src="projects/ALU.mp4" type="video/mp4">
+                            Your browser does not support video.
+                        </video>
                     </div>
-                    <p data-en="Designed and implemented 8-bit Arithmetic Logic Unit on Basys 3 Artix-7 FPGA capable of OR, FADD, SMULL operations." data-es="Diseñé e implementé una Unidad Lógica Aritmética de 8 bits en FPGA Basys 3 Artix-7 capaz de realizar operaciones OR, FADD, SMULL.">Designed and implemented 8-bit Arithmetic Logic Unit on Basys 3 Artix-7 FPGA capable of OR, FADD, SMULL operations.</p>
-                    <div class="project-tech">
-                        <span>FPGA</span>
-                        <span>VHDL</span>
-                        <span>Vivado</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-en="Semi-Autonomous Yogurt Packaging Plant" data-es="Planta Semiautónoma de Envasado de Yogurt">Semi-Autonomous Yogurt Packaging Plant</h3>
-                        <span class="project-tag" data-en="Sensors and Actuators" data-es="Sensores y Actuadores">Sensors and Actuators</span>
-                    </div>
-                    <p data-en="Automated filling and capping system with sensor-based bottle detection and pneumatic cylinder control." data-es="Sistema automatizado de llenado y tapado con detección de botellas basada en sensores y control de cilindros neumáticos.">Automated filling and capping system with sensor-based bottle detection and pneumatic cylinder control.</p>
-                    <div class="project-tech">
-                        <span>PLC</span>
-                        <span>FluidSIM</span>
-                        <span>FESTO</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-en="ET600 Air Conditioning Module Automation" data-es="Automatización de Módulo de Acondicionamiento de Aire ET600">ET600 Air Conditioning Module Automation</h3>
-                        <span class="project-tag" data-en="Industrial Instrumentation" data-es="Instrumentación Industrial">Industrial Instrumentation</span>
-                    </div>
-                    <p data-en="Industrial automation system for GUNT ET600 with Siemens S7-1500 PLC, PROFINET network, and SCADA supervision. Implemented PID control for temperature, humidity, and airflow with complete P&ID documentation (ISA standards) and energy efficiency optimization." data-es="Sistema de automatización industrial para GUNT ET600 con PLC Siemens S7-1500, red PROFINET y supervisión SCADA. Implementé control PID para temperatura, humedad y flujo de aire con documentación P&ID completa (estándares ISA) y optimización de eficiencia energética.">Industrial automation system for GUNT ET600 with Siemens S7-1500 PLC, PROFINET network, and SCADA supervision. Implemented PID control for temperature, humidity, and airflow with complete P&ID documentation (ISA standards) and energy efficiency optimization.</p>
-                    <div class="project-tech">
-                        <span>PLC Siemens S7-1500</span>
-                        <span>SCADA</span>
-                        <span>P&ID</span>
-                        <span>PID Control</span>
-                        <span>PROFINET</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 data-en="8-bit ALU Implementation" data-es="Implementación de ALU de 8 bits">
+                                8-bit ALU Implementation
+                            </h3>
+                            <span class="project-tag" data-en="Digital Circuits" data-es="Circuitos Digitales">
+                                Digital Circuits
+                            </span>
+                        </div>
+                        <p data-en="Designed and implemented 8-bit Arithmetic Logic Unit on Basys 3 Artix-7 FPGA capable of OR, FADD, SMULL operations." 
+                        data-es="Diseñé e implementé una Unidad Lógica Aritmética de 8 bits en FPGA Basys 3 Artix-7 capaz de realizar operaciones OR, FADD, SMULL.">
+                            Designed and implemented 8-bit Arithmetic Logic Unit on Basys 3 Artix-7 FPGA capable of OR, FADD, SMULL operations.
+                        </p>
+                        <div class="project-tech">
+                            <span>FPGA</span>
+                            <span>VHDL</span>
+                            <span>Vivado</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-en="Self-Balancing Robot with Vision" data-es="Robot Autobalanceado con Visión">Self-Balancing Robot with Vision</h3>
-                        <span class="project-tag" data-en="Mecatronics System Design" data-es="Diseño de Sistemas Mecatrónicos">Mecatronics System Design</span>
+                    <div class="project-evidence">
+                        <img src="projects/yogurt.png" alt="Yogurt Packaging Plant">
                     </div>
-                    <p data-en="Two-wheel self-balancing robot with PID-LQR cascade control and vision-assisted gripper for object collection." data-es="Robot autobalanceado de dos ruedas con control en cascada PID-LQR y pinza asistida por visión para recolección de objetos.">Two-wheel self-balancing robot with PID-LQR cascade control and vision-assisted gripper for object collection.</p>
-                    <div class="project-tech">
-                        <span>MyRIO</span>
-                        <span>Raspberry Pi</span>
-                        <span>LabVIEW</span>
-                        <span>Computer Vision</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 data-en="Semi-Autonomous Yogurt Packaging Plant" 
+                                data-es="Planta Semiautónoma de Envasado de Yogurt">
+                                Semi-Autonomous Yogurt Packaging Plant
+                            </h3>
+                            <span class="project-tag" data-en="Sensors and Actuators" 
+                                data-es="Sensores y Actuadores">
+                                Sensors and Actuators
+                            </span>
+                        </div>
+                        <p data-en="Automated filling and capping system with sensor-based bottle detection and pneumatic cylinder control." 
+                        data-es="Sistema automatizado de llenado y tapado con detección de botellas basada en sensores y control de cilindros neumáticos.">
+                            Automated filling and capping system with sensor-based bottle detection and pneumatic cylinder control.
+                        </p>
+                        <div class="project-tech">
+                            <span>PLC</span>
+                            <span>FluidSIM</span>
+                            <span>FESTO</span>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="project-card">
+                    <div class="project-evidence">
+                        <iframe src="projects/P&ID ET600 Acondicionamiento de aire.pdf" frameborder="0"></iframe>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 data-en="ET600 Air Conditioning Module Automation" 
+                                data-es="Automatización de Módulo de Acondicionamiento de Aire ET600">
+                                ET600 Air Conditioning Module Automation
+                            </h3>
+                            <span class="project-tag" data-en="Industrial Instrumentation" 
+                                data-es="Instrumentación Industrial">
+                                Industrial Instrumentation
+                            </span>
+                        </div>
+                        <p data-en="Industrial automation system for GUNT ET600 with Siemens S7-1500 PLC, PROFINET network, and SCADA supervision. Implemented PID control for temperature, humidity, and airflow with complete P&ID documentation (ISA standards) and energy efficiency optimization." 
+                        data-es="Sistema de automatización industrial para GUNT ET600 con PLC Siemens S7-1500, red PROFINET y supervisión SCADA. Implementé control PID para temperatura, humedad y flujo de aire con documentación P&ID completa (estándares ISA) y optimización de eficiencia energética.">
+                            Industrial automation system for GUNT ET600 with Siemens S7-1500 PLC, PROFINET network, and SCADA supervision. Implemented PID control for temperature, humidity, and airflow with complete P&ID documentation (ISA standards) and energy efficiency optimization.
+                        </p>
+                        <div class="project-tech">
+                            <span>PLC Siemens S7-1500</span>
+                            <span>SCADA</span>
+                            <span>P&ID</span>
+                            <span>PID Control</span>
+                            <span>PROFINET</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-en="Dual-Arm Mobile Platform Control" data-es="Control de Plataforma Móvil de Brazos Duales">Dual-Arm Mobile Platform Control</h3>
-                        <span class="project-tag" data-en="Advanced Robotics" data-es="Robótica Avanzada">Advanced Robotics</span>
+                    <div class="project-evidence">
+                        <video controls poster="images/self-balancing-robot-thumbnail.jpg">
+                            <source src="projects/Final Project DSM.mp4" type="video/mp4">
+                            Your browser does not support video.
+                        </video>
                     </div>
-                    <p data-en="Hierarchical kinematic control for dual manipulation with 6DOF floating base and 12DOF manipulators (18DOF total)." data-es="Control cinemático jerárquico para manipulación dual con base flotante de 6DOF y manipuladores de 12DOF (18DOF total).">Hierarchical kinematic control for dual manipulation with 6DOF floating base and 12DOF manipulators (18DOF total).</p>
-                    <div class="project-tech">
-                        <span>ROS2</span>
-                        <span>Python</span>
-                        <span>ESP32</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-en="Autonomous UR5 Object Manipulation" data-es="Manipulación Autónoma de Objetos UR5">Autonomous UR5 Object Manipulation</h3>
-                        <span class="project-tag" data-en="Autonomous Robotics" data-es="Robótica Autónoma">Autonomous Robotics</span>
-                    </div>
-                    <p data-en="Object detection and manipulation using YOLOv8, RRT path planning, and 3D collision detection." data-es="Detección y manipulación de objetos usando YOLOv8, planificación de ruta RRT y detección de colisiones 3D.">Object detection and manipulation using YOLOv8, RRT path planning, and 3D collision detection.</p>
-                    <div class="project-tech">
-                        <span>ROS2</span>
-                        <span>YOLOv8</span>
-                        <span>OpenCV</span>
-                        <span>Python</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-en="Human Activity Recognition" data-es="Reconocimiento de Actividad Humana">Human Activity Recognition</h3>
-                        <span class="project-tag" data-en="Machine Learning" data-es="Aprendizaje Automático">Machine Learning</span>
-                    </div>
-                    <p data-en="Classification of human activities using smartphone sensor data with PyTS, TSFresh, and ML models." data-es="Clasificación de actividades humanas usando datos de sensores de smartphone con PyTS, TSFresh y modelos ML.">Classification of human activities using smartphone sensor data with PyTS, TSFresh, and ML models.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>PyTS</span>
-                        <span>Scikit-learn</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 data-en="Self-Balancing Robot with Vision" 
+                                data-es="Robot Autobalanceado con Visión">
+                                Self-Balancing Robot with Vision
+                            </h3>
+                            <span class="project-tag" data-en="Mecatronics System Design" 
+                                data-es="Diseño de Sistemas Mecatrónicos">
+                                Mecatronics System Design
+                            </span>
+                        </div>
+                        <p data-en="Two-wheel self-balancing robot with PID-LQR cascade control and vision-assisted gripper for object collection." 
+                        data-es="Robot autobalanceado de dos ruedas con control en cascada PID-LQR y pinza asistida por visión para recolección de objetos.">
+                            Two-wheel self-balancing robot with PID-LQR cascade control and vision-assisted gripper for object collection.
+                        </p>
+                        <div class="project-tech">
+                            <span>MyRIO</span>
+                            <span>Raspberry Pi</span>
+                            <span>LabVIEW</span>
+                            <span>Computer Vision</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-en="Movie Recommendation System" data-es="Sistema de Recomendación de Películas">Movie Recommendation System</h3>
-                        <span class="project-tag" data-en="Machine Learning" data-es="Aprendizaje Automático">Machine Learning</span>
+                    <div class="project-evidence">
+                        <video controls poster="images/dual-arm-robot-thumbnail.jpg">
+                            <source src="projects/Simulation.mp4" type="video/mp4">
+                            Your browser does not support video.
+                        </video>
                     </div>
-                    <p data-en="Clustering-based recommendation using poster image features (HOG, color, texture) with PCA/LDA dimensionality reduction." data-es="Recomendación basada en clustering usando características de imágenes de posters (HOG, color, textura) con reducción de dimensionalidad PCA/LDA.">Clustering-based recommendation using poster image features (HOG, color, texture) with PCA/LDA dimensionality reduction.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Computer Vision</span>
-                        <span>Clustering</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 data-en="Dual-Arm Mobile Platform Control" 
+                                data-es="Control de Plataforma Móvil de Brazos Duales">
+                                Dual-Arm Mobile Platform Control
+                            </h3>
+                            <span class="project-tag" data-en="Advanced Robotics" 
+                                data-es="Robótica Avanzada">
+                                Advanced Robotics
+                            </span>
+                        </div>
+                        <p data-en="Hierarchical kinematic control for dual manipulation with 6DOF floating base and 12DOF manipulators (18DOF total)." 
+                        data-es="Control cinemático jerárquico para manipulación dual con base flotante de 6DOF y manipuladores de 12DOF (18DOF total).">
+                            Hierarchical kinematic control for dual manipulation with 6DOF floating base and 12DOF manipulators (18DOF total).
+                        </p>
+                        <div class="project-tech">
+                            <span>ROS2</span>
+                            <span>Python</span>
+                            <span>ESP32</span>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-en="Industrial Robot Anomaly Detection" data-es="Detección de Anomalías en Robot Industrial">Industrial Robot Anomaly Detection</h3>
-                        <span class="project-tag" data-en="Machine Learning" data-es="Aprendizaje Automático">Machine Learning</span>
+                    <div class="project-evidence">
+                        <video controls poster="images/ur5-robot-thumbnail.jpg">
+                            <source src="projects/RA - Final Project.mp4" type="video/mp4">
+                            Your browser does not support video.
+                        </video>
                     </div>
-                    <p data-en="Multiclass anomaly classification using ROCKET/MiniROCKET with IMU sensor time series for predictive maintenance." data-es="Clasificación multiclase de anomalías usando ROCKET/MiniROCKET con series temporales de sensores IMU para mantenimiento predictivo.">Multiclass anomaly classification using ROCKET/MiniROCKET with IMU sensor time series for predictive maintenance.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Time Series</span>
-                        <span>ROCKET</span>
-                        <span>SVM</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 data-en="Autonomous UR5 Object Manipulation" 
+                                data-es="Manipulación Autónoma de Objetos UR5">
+                                Autonomous UR5 Object Manipulation
+                            </h3>
+                            <span class="project-tag" data-en="Autonomous Robotics" 
+                                data-es="Robótica Autónoma">
+                                Autonomous Robotics
+                            </span>
+                        </div>
+                        <p data-en="Object detection and manipulation using YOLOv8, RRT path planning, and 3D collision detection." 
+                        data-es="Detección y manipulación de objetos usando YOLOv8, planificación de ruta RRT y detección de colisiones 3D.">
+                            Object detection and manipulation using YOLOv8, RRT path planning, and 3D collision detection.
+                        </p>
+                        <div class="project-tech">
+                            <span>ROS2</span>
+                            <span>YOLOv8</span>
+                            <span>OpenCV</span>
+                            <span>Python</span>
+                        </div>
                     </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-evidence">
+                        <iframe src="projects/HAR.pdf" frameborder="0"></iframe>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 data-en="Human Activity Recognition" 
+                                data-es="Reconocimiento de Actividad Humana">
+                                Human Activity Recognition
+                            </h3>
+                            <span class="project-tag" data-en="Machine Learning" 
+                                data-es="Aprendizaje Automático">
+                                Machine Learning
+                            </span>
+                        </div>
+                        <p data-en="Classification of human activities using smartphone sensor data with PyTS, TSFresh, and ML models." 
+                        data-es="Clasificación de actividades humanas usando datos de sensores de smartphone con PyTS, TSFresh y modelos ML.">
+                            Classification of human activities using smartphone sensor data with PyTS, TSFresh, and ML models.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>PyTS</span>
+                            <span>Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-evidence">
+                        <img src="projects/pelicula.png" alt="Movie Recommendation System">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 data-en="Movie Recommendation System" 
+                                data-es="Sistema de Recomendación de Películas">
+                                Movie Recommendation System
+                            </h3>
+                            <span class="project-tag" data-en="Machine Learning" 
+                                data-es="Aprendizaje Automático">
+                                Machine Learning
+                            </span>
+                        </div>
+                        <p data-en="Clustering-based recommendation using poster image features (HOG, color, texture) with PCA/LDA dimensionality reduction." 
+                        data-es="Recomendación basada en clustering usando características de imágenes de posters (HOG, color, textura) con reducción de dimensionalidad PCA/LDA.">
+                            Clustering-based recommendation using poster image features (HOG, color, texture) with PCA/LDA dimensionality reduction.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Computer Vision</span>
+                            <span>Clustering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-evidence">
+                        <img src="projects/imu_anomaly_hitting_arm.png" alt="Industrial Robot Anomaly Detection">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 data-en="Industrial Robot Anomaly Detection" 
+                                data-es="Detección de Anomalías en Robot Industrial">
+                                Industrial Robot Anomaly Detection
+                            </h3>
+                            <span class="project-tag" data-en="Machine Learning" 
+                                data-es="Aprendizaje Automático">
+                                Machine Learning
+                            </span>
+                        </div>
+                        <p data-en="Multiclass anomaly classification using ROCKET/MiniROCKET with IMU sensor time series for predictive maintenance." 
+                        data-es="Clasificación multiclase de anomalías usando ROCKET/MiniROCKET con series temporales de sensores IMU para mantenimiento predictivo.">
+                            Multiclass anomaly classification using ROCKET/MiniROCKET with IMU sensor time series for predictive maintenance.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Time Series</span>
+                            <span>ROCKET</span>
+                            <span>SVM</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

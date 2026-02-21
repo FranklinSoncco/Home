@@ -90,7 +90,7 @@
                         <img src="images/robotics-icon.jpg" alt="Robotics">
                     </div>
                     <h3 data-en="Advanced Robotics" data-es="Robótica Avanzada">Advanced Robotics</h3>
-                    <p data-en="Humanoid, quadruped, and mobile robots with custom end-effectors. Focus on autonomous systems, SLAM, and AI integration." data-es="Robots humanoides, cuadrúpedos y móviles con efectores finales personalizados. Enfoque en sistemas autónomos, SLAM e integración de IA.">
+                    <p data-en="Humanoid, quadruped, aerial and mobile robots with custom end-effectors. Focus on autonomous systems, SLAM, and AI integration. The fields of application include biorobotics, agriculture, mining, and space exploration." data-es="Robots humanoides, cuadrúpedos, aéreos y móviles con efectores finales personalizados. Enfoque en sistemas autónomos, SLAM e integración de IA. Los campos de aplicación incluyen biorobótica, agricultura, minería y exploración espacial.">
                         Humanoid, quadruped, and mobile robots with custom end-effectors. Focus on autonomous systems, SLAM, and AI integration.
                     </p>
                 </div>
@@ -131,45 +131,90 @@
             <h2 class="section-title" data-en="Featured Projects" data-es="Proyectos Destacados">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-en="Dual Manipulation Control" data-es="Control de Manipulación Dual">Dual Manipulation Control</h3>
-                        <span class="project-tag" data-en="Advanced Robotics" data-es="Robótica Avanzada">Advanced Robotics</span>
+                    <div class="project-evidence">
+                        <video controls poster="images/dual-arm-robot-thumbnail.jpg">
+                            <source src="projects/Simulation.mp4" type="video/mp4">
+                            Your browser does not support video.
+                        </video>
                     </div>
-                    <p data-en="Hierarchical kinematic control for dual-arm manipulation with floating base. 18 DOF system with task-based coordination." data-es="Control cinemático jerárquico para manipulación de brazos duales con base flotante. Sistema de 18 DOF con coordinación basada en tareas.">
-                        Hierarchical kinematic control for dual-arm manipulation with floating base. 18 DOF system with task-based coordination.
-                    </p>
-                    <div class="project-tech">
-                        <span>ROS2</span>
-                        <span>Python</span>
-                        <span>ESP32</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 data-en="Dual-Arm Mobile Platform Control" 
+                                data-es="Control de Plataforma Móvil de Brazos Duales">
+                                Dual-Arm Mobile Platform Control
+                            </h3>
+                            <span class="project-tag" data-en="Advanced Robotics" 
+                                data-es="Robótica Avanzada">
+                                Advanced Robotics
+                            </span>
+                        </div>
+                        <p data-en="Hierarchical kinematic control for dual manipulation with 6DOF floating base and 12DOF manipulators (18DOF total)." 
+                        data-es="Control cinemático jerárquico para manipulación dual con base flotante de 6DOF y manipuladores de 12DOF (18DOF total).">
+                            Hierarchical kinematic control for dual manipulation with 6DOF floating base and 12DOF manipulators (18DOF total).
+                        </p>
+                        <div class="project-tech">
+                            <span>ROS2</span>
+                            <span>Python</span>
+                            <span>ESP32</span>
+                        </div>
                     </div>
                 </div>
+
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-en="Autonomous UR5 Manipulation" data-es="Manipulación Autónoma UR5">Autonomous UR5 Manipulation</h3>
-                        <span class="project-tag" data-en="Computer Vision" data-es="Visión Computacional">Computer Vision</span>
+                    <div class="project-evidence">
+                        <video controls poster="images/ur5-robot-thumbnail.jpg">
+                            <source src="projects/RA - Final Project.mp4" type="video/mp4">
+                            Your browser does not support video.
+                        </video>
                     </div>
-                    <p data-en="Object detection and manipulation using YOLOv8 and RRT trajectory planning with collision detection in 3D space." data-es="Detección y manipulación de objetos usando YOLOv8 y planificación de trayectorias RRT con detección de colisiones en espacio 3D.">
-                        Object detection and manipulation using YOLOv8 and RRT trajectory planning with collision detection in 3D space.
-                    </p>
-                    <div class="project-tech">
-                        <span>ROS2</span>
-                        <span>YOLOv8</span>
-                        <span>OpenCV</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 data-en="Autonomous UR5 Object Manipulation" 
+                                data-es="Manipulación Autónoma de Objetos UR5">
+                                Autonomous UR5 Object Manipulation
+                            </h3>
+                            <span class="project-tag" data-en="Autonomous Robotics" 
+                                data-es="Robótica Autónoma">
+                                Autonomous Robotics
+                            </span>
+                        </div>
+                        <p data-en="Object detection and manipulation using YOLOv8, RRT path planning, and 3D collision detection." 
+                        data-es="Detección y manipulación de objetos usando YOLOv8, planificación de ruta RRT y detección de colisiones 3D.">
+                            Object detection and manipulation using YOLOv8, RRT path planning, and 3D collision detection.
+                        </p>
+                        <div class="project-tech">
+                            <span>ROS2</span>
+                            <span>YOLOv8</span>
+                            <span>OpenCV</span>
+                            <span>Python</span>
+                        </div>
                     </div>
                 </div>
+
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3 data-en="Self-Balancing Robot" data-es="Robot Autobalanceado">Self-Balancing Robot</h3>
-                        <span class="project-tag" data-en="Control Systems" data-es="Sistemas de Control">Control Systems</span>
+                    <div class="project-evidence">
+                        <iframe src="projects/Proyecto - ALU.pdf" frameborder="0"></iframe>
                     </div>
-                    <p data-en="Two-wheel self-balancing robot with PID-LQR cascade control and vision-assisted front gripper for object collection." data-es="Robot autobalanceado de dos ruedas con control en cascada PID-LQR y pinza frontal asistida por visión para recolección de objetos.">
-                        Two-wheel self-balancing robot with PID-LQR cascade control and vision-assisted front gripper for object collection.
-                    </p>
-                    <div class="project-tech">
-                        <span>MyRIO</span>
-                        <span>Raspberry Pi</span>
-                        <span>LabVIEW</span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3 data-en="8-bit ALU Implementation" 
+                                data-es="Implementación de ALU de 8 bits">
+                                8-bit ALU Implementation
+                            </h3>
+                            <span class="project-tag" data-en="Digital Circuits" 
+                                data-es="Circuitos Digitales">
+                                Digital Circuits
+                            </span>
+                        </div>
+                        <p data-en="Designed and implemented 8-bit Arithmetic Logic Unit on Basys 3 Artix-7 FPGA capable of OR, FADD, SMULL operations." 
+                        data-es="Diseñé e implementé una Unidad Lógica Aritmética de 8 bits en FPGA Basys 3 Artix-7 capaz de realizar operaciones OR, FADD, SMULL.">
+                            Designed and implemented 8-bit Arithmetic Logic Unit on Basys 3 Artix-7 FPGA capable of OR, FADD, SMULL operations.
+                        </p>
+                        <div class="project-tech">
+                            <span>FPGA</span>
+                            <span>VHDL</span>
+                            <span>Vivado</span>
+                        </div>
                     </div>
                 </div>
             </div>
