@@ -1,305 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Franklin Soncco</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-en="About &mdash; Franklin Soncco" data-es="Perfil &mdash; Franklin Soncco">About &mdash; Franklin Soncco</title>
+<meta name="description" content="Profile, education, certifications, languages and contact details for Franklin David Soncco Machaca, Mechatronics Engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;450;500;550;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-gradient" data-en="Franklin Soncco" data-es="Franklin Soncco">Franklin Soncco</span>
-            </a>
-            <div class="nav-links">
-                <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
-                <a href="research.html" data-en="Research & Academia" data-es="Investigación y Academia">Research & Academia</a>
-                <a href="skills.html" data-en="Skills & Projects" data-es="Habilidades y Proyectos">Skills & Projects</a>
-                <a href="experience.html" data-en="Experience" data-es="Experiencia">Experience</a>
-                <a href="about.html" class="active" data-en="About" data-es="Acerca de">About</a>
-                <button class="lang-toggle" id="langToggle">
-                    <span class="lang-option active" data-lang="en">EN</span>
-                    <span class="separator">|</span>
-                    <span class="lang-option" data-lang="es">ES</span>
-                </button>
-            </div>
-            <div class="mobile-menu-toggle" id="mobileMenuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+<a href="#main" class="skip-link" data-en="Skip to content" data-es="Ir al contenido">Skip to content</a>
 
-    <section class="page-header">
-        <div class="container">
-            <h1 data-en="About Me" data-es="Acerca de Mí">About Me</h1>
-            <p data-en="Education, certifications, and contact information" data-es="Educación, certificaciones e información de contacto">Education, certifications, and contact information</p>
-        </div>
-    </section>
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-links">
+      <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+      <a href="research.html" data-en="Research" data-es="Investigación">Research</a>
+      <a href="skills.html" data-en="Projects &amp; Skills" data-es="Proyectos y Habilidades">Projects &amp; Skills</a>
+      <a href="experience.html" data-en="Experience" data-es="Experiencia">Experience</a>
+      <a href="about.html" data-en="About" data-es="Perfil">About</a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-option active" data-lang="en">EN</span>
+        <span class="separator">|</span>
+        <span class="lang-option" data-lang="es">ES</span>
+      </button>
+    </div>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-    <section class="education">
-        <div class="container">
-            <h2 class="section-title" data-en="Education" data-es="Educación">Education</h2>
-            
-            <div class="education-card">
-                <div class="edu-icon">
-                    <img src="images/utec.png" alt="UTEC Logo">
-                </div>
-                <div class="edu-content">
-                    <h3 data-en="Mechatronics Engineering" data-es="Ingeniería Mecatrónica">Mechatronics Engineering</h3>
-                    <p class="edu-institution" data-en="University of Engineering and Technology (UTEC)" data-es="Universidad de Ingeniería y Tecnología (UTEC)">University of Engineering and Technology (UTEC)</p>
-                    <p class="edu-period">2021 - <span data-en="Present" data-es="Presente">Present</span> | <span data-en="9th Semester" data-es="9° Semestre">9th Semester</span></p>
-                    <div class="edu-details">
-                        <span class="badge" data-en="Top Third" data-es="Tercio Superior">Top Third</span>
-                        <span class="badge" data-en="Beca 18 Scholar" data-es="Becario Beca 18">Beca 18 Scholar</span>
-                    </div>
-                    <div class="specializations">
-                        <p><strong data-en="Specializations:" data-es="Especializaciones:">Specializations:</strong></p>
-                        <div class="spec-tags">
-                            <span data-en="Advanced Robotics" data-es="Robótica Avanzada">Advanced Robotics ✓</span>
-                            <span data-en="Industrial Mechatronics (90% complete)" data-es="Mecatrónica Industrial (90% completado)">Industrial Mechatronics (90% complete)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<main id="main">
 
-            <div class="education-card">
-                <!-- <div class="edu-icon">📚</div>  -->
-                <div class="edu-icon"><img src="images/colegio.png" alt="Icon"></div>
-                <div class="edu-content">
-                    <h3 data-en="High School" data-es="Educación Secundaria">High School</h3>
-                    <p class="edu-institution">I.E. Santa Rita de Siguas</p>
-                    <p class="edu-period">2016 - 2020</p>
-                    <div class="edu-details">
-                        <span class="badge" data-en="Graduated top of my class" data-es="Primer Puesto">Graduated top of my class</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="container">
+  <header class="page-head">
+    <h1 class="page-title" data-en="About" data-es="Perfil">About</h1>
+    <p class="page-sub" data-en="Background, education, certifications and how to reach me." data-es="Trayectoria, formación, certificaciones y cómo contactarme.">Background, education, certifications and how to reach me.</p>
+  </header>
+</div>
 
-    <section class="certifications">
-        <div class="container">
-            <h2 class="section-title" data-en="Certifications & Awards" data-es="Certificaciones y Premios">Certifications & Awards</h2>
-            
-            <div class="cert-categories">
-                <button class="cert-tab active" data-category="all" data-en="All" data-es="Todas">All</button>
-                <button class="cert-tab" data-category="professional" data-en="Professional" data-es="Profesionales">Professional</button>
-                <button class="cert-tab" data-category="academic" data-en="Academic" data-es="Académicas">Academic</button>
-                <button class="cert-tab" data-category="awards" data-en="Awards" data-es="Premios">Awards</button>
-            </div>
-
-            <div class="cert-grid">
-                <!-- Professional Certifications -->
-                <div class="cert-card" data-category="professional">
-                    <div class="cert-icon">🏆</div>
-                    <h3 data-en="ISO 31000:2018 & 31010:2019 Risk Management" data-es="Gestión de Riesgos ISO 31000:2018 y 31010:2019">ISO 31000:2018 & 31010:2019 Risk Management</h3>
-                    <p class="cert-issuer">INTELLECTTA</p>
-                    <!-- Update with actual certification filename -->
-                    <button class="view-cert-btn" data-cert="certifications/iso31000.webp" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
-                </div>
-
-                <div class="cert-card" data-category="professional">
-                    <div class="cert-icon">🏆</div>
-                    <h3 data-en="Behavior-Based Safety Management (SBC)" data-es="Gestión de Seguridad Basada en el Comportamiento (SBC)">Behavior-Based Safety Management (SBC)</h3>
-                    <p class="cert-issuer">INTELLECTTA</p>
-                    <button class="view-cert-btn" data-cert="certifications/sbc.webp" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
-                </div>
-
-                <div class="cert-card" data-category="professional">
-                    <div class="cert-icon">🏆</div>
-                    <h3 data-en="Internal Auditor SIG - ISO 9001:2015, 14001:2015, 45001:2018" data-es="Auditor Interno SIG - ISO 9001:2015, 14001:2015, 45001:2018">Internal Auditor SIG - ISO 9001:2015, 14001:2015, 45001:2018</h3>
-                    <p class="cert-issuer">INTELLECTTA</p>
-                    <button class="view-cert-btn" data-cert="certifications/auditor-interno.webp" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
-                </div>
-
-                <div class="cert-card" data-category="professional">
-                    <div class="cert-icon">🏆</div>
-                    <h3 data-en="Integrated Management Systems - ISO 9001, 14001, 45001" data-es="Sistemas Integrados de Gestión - ISO 9001, 14001, 45001">Integrated Management Systems - ISO 9001, 14001, 45001</h3>
-                    <p class="cert-issuer">INTELLECTTA</p>
-                    <button class="view-cert-btn" data-cert="certifications/sig.webp" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
-                </div>
-
-                <!-- Academic Certifications -->
-                <div class="cert-card" data-category="academic">
-                    <div class="cert-icon">📜</div>
-                    <h3 data-en="Mechanical Design with Parametric, Shape, and Topology Optimization" data-es="Diseño Mecánico con Optimización Paramétrica, de Forma y Topológica">Mechanical Design with Parametric, Shape, and Topology Optimization</h3>
-                    <p class="cert-issuer">UTEC</p>
-                    <button class="view-cert-btn" data-cert="certifications/optimization.pdf" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
-                </div>
-
-                <div class="cert-card" data-category="academic">
-                    <div class="cert-icon">📜</div>
-                    <h3 data-en="Advanced Robotics Specialization" data-es="Especialización en Robótica Avanzada">Advanced Robotics Specialization</h3>
-                    <p class="cert-issuer">UTEC</p>
-                    <button class="view-cert-btn" data-cert="certifications/robotica-avanzada.pdf" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
-                </div>
-
-                <div class="cert-card" data-category="academic">
-                    <div class="cert-icon">📜</div>
-                    <h3 data-en="Introduction to IoT" data-es="Introducción a IoT">Introduction to IoT</h3>
-                    <p class="cert-issuer">Cisco Networking Academy</p>
-                    <button class="view-cert-btn" data-cert="certifications/iot.pdf" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
-                </div>
-
-                <div class="cert-card" data-category="academic">
-                    <div class="cert-icon">📜</div>
-                    <h3 data-en="Introduction to Artificial Intelligence for Students" data-es="Introducción a la Inteligencia Artificial para Estudiantes">Introduction to Artificial Intelligence for Students</h3>
-                    <p class="cert-issuer">UTEC</p>
-                    <button class="view-cert-btn" data-cert="certifications/ia.pdf" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
-                </div>
-
-                <div class="cert-card" data-category="academic">
-                    <div class="cert-icon">📜</div>
-                    <h3 data-en="Digital Skills for Students" data-es="Competencias Digitales para Estudiantes">Digital Skills for Students</h3>
-                    <p class="cert-issuer">UTEC</p>
-                    <button class="view-cert-btn" data-cert="certifications/digcomp.pdf" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
-                </div>
-
-                <!-- Awards -->
-                <!-- <div class="cert-card" data-category="awards">
-                    <div class="cert-icon">🥇</div>
-                    <h3 data-en="ICPC Pacific Northwest Top 10" data-es="ICPC Pacífico Noroeste Top 10">ICPC Pacific Northwest Top 10</h3>
-                    <p class="cert-issuer" data-en="International Collegiate Programming Contest" data-es="Concurso Internacional de Programación Universitaria">International Collegiate Programming Contest</p>
-                </div>
-
-                <div class="cert-card" data-category="awards">
-                    <div class="cert-icon">🥇</div>
-                    <h3 data-en="William Lowell Putnam Mathematical Competition Top 200" data-es="Competencia Matemática William Lowell Putnam Top 200">William Lowell Putnam Mathematical Competition Top 200</h3>
-                    <p class="cert-issuer" data-en="Mathematical Association of America" data-es="Asociación Matemática de América">Mathematical Association of America</p>
-                </div>
-
-                <div class="cert-card" data-category="awards">
-                    <div class="cert-icon">🥈</div>
-                    <h3 data-en="Chinese Mathematics Olympiad (CMO) Silver Medal" data-es="Olimpiada Matemática China (CMO) Medalla de Plata">Chinese Mathematics Olympiad (CMO) Silver Medal</h3>
-                    <p class="cert-issuer" data-en="Chinese Mathematical Society" data-es="Sociedad Matemática China">Chinese Mathematical Society</p>
-                </div>   -->
-
-                <div class="cert-card" data-category="awards">
-                    <div class="cert-icon">🥇</div>
-                    <h3 data-en="Graduated top of my class" data-es="Primer puesto de promoción">Graduated top of my class</h3>
-                    <p class="cert-issuer">I.E. Santa Rita de Siguas</p>
-                    <button class="view-cert-btn" data-cert="certifications/colegio.pdf" data-en="View Certificate" data-es="Ver Certificado">View Certificate</button>
-                </div>   
-
-                <div class="cert-card" data-category="awards">
-                    <div class="cert-icon">🥇</div>
-                    <h3 data-en="Recipient of Scholarship 18" data-es="Acreedor Beca 18">Recipient of Scholarship 18</h3>
-                    <p class="cert-issuer" data-en="Programa Nacional de Becas (PRONABEC)" data-es="Programa Nacional de Becas (PRONABEC)">Programa Nacional de Becas (PRONABEC)</p>
-                </div>
-                
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Certification Modal -->
-    <div id="certModal" class="cert-modal">
-        <div class="cert-modal-content">
-            <span class="cert-modal-close">&times;</span>
-            <div class="cert-modal-body">
-                <iframe id="certViewer" src="" frameborder="0"></iframe>
-            </div>
-        </div>
+<!-- ================= Profile ================= -->
+<section class="section--tight">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title" data-en="Professional Profile" data-es="Perfil Profesional">Professional Profile</h2>
     </div>
 
-    <section class="languages">
-        <div class="container">
-            <h2 class="section-title" data-en="Languages" data-es="Idiomas">Languages</h2>
-            <div class="lang-grid">
-                <div class="lang-card">
-                    <h3 data-en="Spanish" data-es="Español">Spanish</h3>
-                    <p data-en="Native" data-es="Nativo">Native</p>
-                </div>
-                <div class="lang-card">
-                    <h3 data-en="Quechua" data-es="Quechua">Quechua</h3>
-                    <p data-en="Native" data-es="Nativo">Native</p>
-                </div>
-                <div class="lang-card">
-                    <h3 data-en="English" data-es="Inglés">English</h3>
-                    <p>B2 (TOEFL ITP)</p>
-                </div>
-                <div class="lang-card">
-                    <h3 data-en="Russian" data-es="Ruso">Russian</h3>
-                    <p data-en="A1 (Learning)" data-es="A1 (Aprendiendo)">A1 (Learning)</p>
-                </div>
-                <div class="lang-card">
-                    <h3 data-en="Mandarin Chinese" data-es="Chino Mandarín">Mandarin Chinese</h3>
-                    <p data-en="Beginner (Learning)" data-es="Principiante (Aprendiendo)">Beginner (Learning)</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="prose">
+      <p data-en="My motivation is to work as a researcher in advanced robotics, integrating the most recent technology with the fundamentals of robotics itself. I hold the institutional specialisation in Advanced Robotics, Industrial Mechatronics and Artificial Intelligence from UTEC, and my work concentrates on three areas." data-es="Mi motivación es desempeñarme como investigador en robótica avanzada, integrando lo más reciente de la tecnología con los fundamentos de la robótica. Cuento con la especialización institucional en Robótica Avanzada, Mecatrónica Industrial e Inteligencia Artificial de UTEC, y mi trabajo se concentra en tres áreas.">My motivation is to work as a researcher in advanced robotics, integrating the most recent technology with the fundamentals of robotics itself. I hold the institutional specialisation in Advanced Robotics, Industrial Mechatronics and Artificial Intelligence from UTEC, and my work concentrates on three areas.</p>
+    </div>
 
-    <section class="contact">
-        <div class="container">
-            <h2 class="section-title" data-en="Contact Me" data-es="Contáctame">Contact Me</h2>
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon"><img src="images/gmail.webp" alt="Icon"></div>
-                    <h3 data-en="Email" data-es="Correo">Email</h3>
-                    <!-- Replace with your actual email -->
-                    <a href="mailto:franklin.soncco@utec.edu.pe">franklin.soncco@utec.edu.pe</a>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon"><img src="images/lideklin.png" alt="Icon"></div>
-                    <h3>LinkedIn</h3>
-                    <!-- Replace with your actual LinkedIn -->
-                    <a href="https://www.linkedin.com/in/franklin-david-soncco-machaca/" target="_blank">linkedin.com/in/franklin-david-soncco-machaca</a>
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon"><img src="images/microscopio.jpg" alt="Icon"></div>
-                    <h3>ORCID</h3>
-                    <!-- Replace with your actual ORCID -->
-                    <a href="https://orcid.org/0009-0009-8311-2465" target="_blank">orcid.org/0009-0009-8311-2465</a>
-                </div>
-                <div class="contact-card">
-                    <!--<div class="contact-icon">💻</div>  -->
-                    <div class="contact-icon"><img src="images/programing.png" alt="Icon"></div>
-                    <h3>GitHub</h3>
-                    <!-- Replace with your actual GitHub -->
-                    <a href="https://github.com/FranklinSoncco" target="_blank">github.com/FranklinSoncco</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="def-list" style="max-width: var(--maxw-prose);">
+      <div class="def-row">
+        <div class="def-key" data-en="Robotics" data-es="Robótica">Robotics</div>
+        <div class="def-val" data-en="Humanoid, quadruped and mobile robots with custom end-effectors, and the modern control that drives them — optimisation-based, neural-network-based and dynamic-model-based — together with SLAM for autonomous navigation. My application fields are agriculture, space exploration, rehabilitation medicine and mining." data-es="Robots humanoides, cuadrúpedos y móviles con efectores finales personalizados, y el control moderno que los gobierna — basado en optimización, en redes neuronales y en modelos dinámicos — junto con SLAM para la navegación autónoma. Mis campos de aplicación son la agricultura, la exploración espacial, la medicina de rehabilitación y la minería.">Humanoid, quadruped and mobile robots with custom end-effectors, and the modern control that drives them — optimisation-based, neural-network-based and dynamic-model-based — together with SLAM for autonomous navigation. My application fields are agriculture, space exploration, rehabilitation medicine and mining.</div>
+      </div>
+      <div class="def-row">
+        <div class="def-key" data-en="Industrial Automation" data-es="Automatización Industrial">Industrial Automation</div>
+        <div class="def-val" data-en="Backed by my specialisation in Industrial Mechatronics: reading and implementing industrial process drawings to standard, and sizing the sensors and actuators a given process requires. Mining is the field I am most drawn to, alongside any environment where a process can be automated." data-es="Respaldada por mi especialización en Mecatrónica Industrial: la lectura e implementación de planos de procesos industriales según norma, y el dimensionamiento de los sensores y actuadores que requiere un proceso determinado. La minería es el campo que más me atrae, junto con cualquier entorno donde se pueda automatizar un proceso.">Backed by my specialisation in Industrial Mechatronics: reading and implementing industrial process drawings to standard, and sizing the sensors and actuators a given process requires. Mining is the field I am most drawn to, alongside any environment where a process can be automated.</div>
+      </div>
+      <div class="def-row">
+        <div class="def-key" data-en="Artificial Intelligence" data-es="Inteligencia Artificial">Artificial Intelligence</div>
+        <div class="def-val" data-en="Machine learning, deep learning and reinforcement learning — the areas of technology that most excite me today — applied to perception, predictive maintenance and control. I want to create knowledge and build technology that makes everyday human tasks easier." data-es="Machine learning, deep learning y reinforcement learning — las áreas de la tecnología que más me apasionan hoy — aplicadas a la percepción, el mantenimiento predictivo y el control. Quiero crear conocimiento y construir tecnología que facilite las tareas de la vida diaria del ser humano.">Machine learning, deep learning and reinforcement learning — the areas of technology that most excite me today — applied to perception, predictive maintenance and control. I want to create knowledge and build technology that makes everyday human tasks easier.</div>
+      </div>
+      <div class="def-row">
+        <div class="def-key" data-en="Research &amp; Teaching" data-es="Investigación y Docencia">Research &amp; Teaching</div>
+        <div class="def-val" data-en="Research is what I am most passionate about, and teaching is where I found I can communicate it. Advising students across three national programmes, their feedback consistently reported understanding the material better than in their regular classes." data-es="La investigación es lo que más me apasiona, y la enseñanza es donde comprobé que puedo comunicarla. Al asesorar estudiantes en tres programas nacionales, su feedback reportó de forma consistente que comprendían mejor el material que en sus clases regulares.">Research is what I am most passionate about, and teaching is where I found I can communicate it. Advising students across three national programmes, their feedback consistently reported understanding the material better than in their regular classes.</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <h3 data-en="Franklin Soncco" data-es="Franklin Soncco">Franklin Soncco</h3>
-                    <p data-en="Robotics Researcher & Mechatronics Engineer" data-es="Investigador en Robótica e Ingeniero Mecatrónico">Robotics Researcher & Mechatronics Engineer</p>
-                </div>
-                <div class="footer-right">
-                    <div class="social-links">
-                        <a href="mailto:franklin.soncco@utec.edu.pe" target="_blank" title="Email">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/franklin-david-soncco-machaca/" target="_blank" title="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                        </a>
-                        <a href="https://orcid.org/0009-0009-8311-2465" target="_blank" title="ORCID">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 4.053-1.666 4.053-3.722 0-2.056-1.694-3.722-4.053-3.722h-2.297z"/></svg>
-                        </a>
-                        <a href="https://github.com/FranklinSoncco" target="_blank" title="GitHub">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 <span data-en="Franklin Soncco. All rights reserved." data-es="Franklin Soncco. Todos los derechos reservados.">Franklin Soncco. All rights reserved.</span></p>
-                <!-- <p class="visitor-counter" data-en="Visits: " data-es="Visitas: ">Visits: <span id="visitCount">0</span></p>  -->
-            </div>
-        </div>
-    </footer>
+<!-- ================= Education ================= -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title" data-en="Education" data-es="Formación Académica">Education</h2>
+    </div>
 
-    <script src="script.js"></script>
+    <div>
+      <div class="edu-item">
+        <img class="edu-logo" src="images/utec.png" alt="UTEC" loading="lazy">
+        <div>
+          <h3 class="edu-degree" data-en="Mechatronics Engineering — Graduate" data-es="Ingeniería Mecatrónica — Egresado">Mechatronics Engineering — Graduate</h3>
+          <div class="edu-school" data-en="Universidad de Ingeniería y Tecnología (UTEC), Lima" data-es="Universidad de Ingeniería y Tecnología (UTEC), Lima">Universidad de Ingeniería y Tecnología (UTEC), Lima</div>
+          <div class="edu-date" data-en="2021-2 — 2026-1" data-es="2021-2 — 2026-1">2021-2 — 2026-1</div>
+          <p class="edu-notes" data-en="Institutional specialisation in Advanced Robotics, Industrial Mechatronics and Artificial Intelligence." data-es="Especialización institucional en Robótica Avanzada, Mecatrónica Industrial e Inteligencia Artificial.">Institutional specialisation in Advanced Robotics, Industrial Mechatronics and Artificial Intelligence.</p>
+          <div>
+            <span class="honor-tag" data-en="Upper third of class" data-es="Tercio Superior">Upper third of class</span>
+            <span class="honor-tag" data-en="Beca 18 — PRONABEC (active)" data-es="Beca 18 — PRONABEC (vigente)">Beca 18 — PRONABEC (active)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-logo" style="display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-size:0.8rem; color:var(--text-soft);">CBT</div>
+        <div>
+          <h3 class="edu-degree" data-en="Business Administration &amp; International Trade — 1st cycle" data-es="Administración y Negocios Internacionales — 1.º Ciclo">Business Administration &amp; International Trade — 1st cycle</h3>
+          <div class="edu-school">Cibertec, Lima</div>
+          <div class="edu-date" data-en="March 2021 — August 2021" data-es="Marzo 2021 — Agosto 2021">March 2021 — August 2021</div>
+          <p class="edu-notes" data-en="Studies paused to pursue engineering at UTEC." data-es="Estudios pausados para continuar la carrera de ingeniería en UTEC.">Studies paused to pursue engineering at UTEC.</p>
+          <div>
+            <span class="honor-tag" data-en="Top tenth of class" data-es="Décimo Superior">Top tenth of class</span>
+            <span class="honor-tag" data-en="BCP Scholarship (held during studies)" data-es="Beca BCP (durante los estudios)">BCP Scholarship (held during studies)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <img class="edu-logo" src="images/colegio.png" alt="I.E. Santa Rita de Siguas" loading="lazy">
+        <div>
+          <h3 class="edu-degree" data-en="Secondary Education" data-es="Educación Secundaria">Secondary Education</h3>
+          <div class="edu-school">I.E. Santa Rita de Siguas, Arequipa</div>
+          <div class="edu-date">2016 — 2020</div>
+          <div>
+            <span class="honor-tag" data-en="First place in graduating class" data-es="Primer puesto de promoción">First place in graduating class</span>
+          </div>
+          <div style="margin-top:0.6rem;">
+            <button class="btn btn-sm" data-media="certifications/colegio.pdf" data-media-title="Primer puesto de promoción — I.E. Santa Rita de Siguas" data-en="View certificate" data-es="Ver certificado">View certificate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Certifications ================= -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title" data-en="Certifications" data-es="Certificaciones">Certifications</h2>
+      <p class="section-lead" data-en="Verified certificates are linked; the remainder are listed for reference" data-es="Los certificados verificables están enlazados; el resto se listan como referencia">Verified certificates are linked; the remainder are listed for reference</p>
+    </div>
+
+    <div class="project-toolbar" data-filter-group data-filter-target=".cert-card">
+      <button class="filter-btn active" data-category="all" data-en="All" data-es="Todas">All</button>
+      <button class="filter-btn" data-category="quality" data-en="Quality &amp; Risk (ISO)" data-es="Calidad y Riesgos (ISO)">Quality &amp; Risk (ISO)</button>
+      <button class="filter-btn" data-category="engineering" data-en="Engineering" data-es="Ingeniería">Engineering</button>
+      <button class="filter-btn" data-category="data" data-en="Data &amp; Digital" data-es="Datos y Digital">Data &amp; Digital</button>
+      <button class="filter-btn" data-category="business" data-en="Business" data-es="Negocios">Business</button>
+      <button class="filter-btn" data-category="civic" data-en="Civic &amp; Culture" data-es="Ciudadanía y Cultura">Civic &amp; Culture</button>
+    </div>
+
+    <div class="cert-grid">
+
+      <!-- Quality & risk -->
+      <div class="cert-card" data-category="quality">
+        <div class="cert-issuer">INTELLECTTA</div>
+        <div class="cert-name" data-en="Professional Specialisation Diploma in Risk Management — ISO 31000:2018 &amp; ISO 31010:2019" data-es="Diploma de Especialización Profesional en Gestión de Riesgos — ISO 31000:2018 e ISO 31010:2019">Professional Specialisation Diploma in Risk Management — ISO 31000:2018 &amp; ISO 31010:2019</div>
+        <button class="btn btn-sm" data-media="certifications/iso31000.webp" data-media-title="ISO 31000:2018 & ISO 31010:2019 — Risk Management" data-en="View certificate" data-es="Ver certificado">View certificate</button>
+      </div>
+
+      <div class="cert-card" data-category="quality">
+        <div class="cert-issuer">INTELLECTTA</div>
+        <div class="cert-name" data-en="Professional Specialisation Diploma in Behaviour-Based Safety Management (SBC)" data-es="Diploma de Especialización Profesional en Gestión de Seguridad Basada en el Comportamiento (SBC)">Professional Specialisation Diploma in Behaviour-Based Safety Management (SBC)</div>
+        <button class="btn btn-sm" data-media="certifications/sbc.webp" data-media-title="Behaviour-Based Safety Management (SBC)" data-en="View certificate" data-es="Ver certificado">View certificate</button>
+      </div>
+
+      <div class="cert-card" data-category="quality">
+        <div class="cert-issuer">INTELLECTTA</div>
+        <div class="cert-name" data-en="Internal Auditor Training, Integrated Management System — ISO 9001:2015, 14001:2015, 45001:2018 (QHSE)" data-es="Formación de Auditor Interno SIG — Trinorma ISO 9001:2015, 14001:2015, 45001:2018 (QHSE)">Internal Auditor Training, Integrated Management System — ISO 9001:2015, 14001:2015, 45001:2018 (QHSE)</div>
+        <button class="btn btn-sm" data-media="certifications/auditor-interno.webp" data-media-title="Internal Auditor SIG — Trinorma QHSE" data-en="View certificate" data-es="Ver certificado">View certificate</button>
+      </div>
+
+      <div class="cert-card" data-category="quality">
+        <div class="cert-issuer">INTELLECTTA</div>
+        <div class="cert-name" data-en="Professional Diploma in Integrated Management Systems — ISO 9001:2015, 14001:2015, 45001:2018 (QHSE)" data-es="Diploma Profesional en Sistemas Integrados de Gestión — Trinorma ISO 9001:2015, 14001:2015, 45001:2018 (QHSE)">Professional Diploma in Integrated Management Systems — ISO 9001:2015, 14001:2015, 45001:2018 (QHSE)</div>
+        <button class="btn btn-sm" data-media="certifications/sig.webp" data-media-title="Integrated Management Systems — Trinorma QHSE" data-en="View certificate" data-es="Ver certificado">View certificate</button>
+      </div>
+
+      <!-- Engineering -->
+      <div class="cert-card" data-category="engineering">
+        <div class="cert-issuer">UTEC</div>
+        <div class="cert-name" data-en="Institutional Specialisation in Advanced Robotics" data-es="Especialización Institucional en Robótica Avanzada">Institutional Specialisation in Advanced Robotics</div>
+        <button class="btn btn-sm" data-media="certifications/robotica-avanzada.pdf" data-media-title="Institutional Specialisation in Advanced Robotics" data-en="View certificate" data-es="Ver certificado">View certificate</button>
+      </div>
+
+      <div class="cert-card" data-category="engineering">
+        <div class="cert-issuer" data-en="UTEC Global Academy · 2025" data-es="UTEC Global Academy · 2025">UTEC Global Academy · 2025</div>
+        <div class="cert-name">Mechanical Design with Parametric, Shape and Topology Optimization</div>
+        <button class="btn btn-sm" data-media="certifications/optimization.pdf" data-media-title="Mechanical Design with Parametric, Shape and Topology Optimization" data-en="View certificate" data-es="Ver certificado">View certificate</button>
+      </div>
+
+      <div class="cert-card" data-category="engineering">
+        <div class="cert-issuer">Cisco Networking Academy</div>
+        <div class="cert-name" data-en="Introduction to the Internet of Things (IoT)" data-es="Introducción al Internet de las Cosas (IoT)">Introduction to the Internet of Things (IoT)</div>
+        <button class="btn btn-sm" data-media="certifications/iot.pdf" data-media-title="Cisco — Introduction to IoT" data-en="View certificate" data-es="Ver certificado">View certificate</button>
+      </div>
+
+      <div class="cert-card" data-category="engineering data">
+        <div class="cert-issuer">UTEC</div>
+        <div class="cert-name" data-en="Introduction to Artificial Intelligence for Students" data-es="Introducción a la Inteligencia Artificial para Estudiantes">Introduction to Artificial Intelligence for Students</div>
+        <button class="btn btn-sm" data-media="certifications/ia.pdf" data-media-title="Introduction to Artificial Intelligence for Students" data-en="View certificate" data-es="Ver certificado">View certificate</button>
+      </div>
+
+      <!-- Data & digital -->
+      <div class="cert-card" data-category="data">
+        <div class="cert-issuer">UTEC</div>
+        <div class="cert-name" data-en="Digital Competences for Students — DIGCOMP framework" data-es="Competencias Digitales para Estudiantes — marco DIGCOMP">Digital Competences for Students — DIGCOMP framework</div>
+        <button class="btn btn-sm" data-media="certifications/digcomp.pdf" data-media-title="Digital Competences — DIGCOMP" data-en="View certificate" data-es="Ver certificado">View certificate</button>
+      </div>
+
+      <div class="cert-card" data-category="data">
+        <div class="cert-issuer">StanfordOnline</div>
+        <div class="cert-name">Databases: Advanced Topics in SQL</div>
+        <div class="cert-meta">SOE.YDB-ADVSQL0001</div>
+      </div>
+
+      <div class="cert-card" data-category="data">
+        <div class="cert-issuer">HarvardX</div>
+        <div class="cert-name">CS50's Introduction to Databases with SQL</div>
+        <div class="cert-meta">CS50 SQL</div>
+      </div>
+
+      <div class="cert-card" data-category="data">
+        <div class="cert-issuer">Microsoft · Coursera</div>
+        <div class="cert-name">Power BI Data Analyst Professional Certificate</div>
+      </div>
+
+      <div class="cert-card" data-category="data">
+        <div class="cert-issuer">Microsoft · Coursera</div>
+        <div class="cert-name">Power Platform Fundamentals</div>
+      </div>
+
+      <div class="cert-card" data-category="data">
+        <div class="cert-issuer">LinkedIn Learning</div>
+        <div class="cert-name" data-en="WordPress Certification" data-es="Certificación en WordPress">WordPress Certification</div>
+        <div class="cert-meta" data-en="Publishing, theme and menu customisation, widgets, plugins, user and settings administration" data-es="Publicación, personalización de temas y menús, widgets, plugins, administración de usuarios y configuración">Publishing, theme and menu customisation, widgets, plugins, user and settings administration</div>
+      </div>
+
+      <!-- Business -->
+      <div class="cert-card" data-category="business">
+        <div class="cert-issuer">CIBERTEC</div>
+        <div class="cert-name" data-en="Services for Exporters — PROMPERÚ" data-es="Servicios al Exportador de PROMPERÚ">Services for Exporters — PROMPERÚ</div>
+      </div>
+
+      <div class="cert-card" data-category="business">
+        <div class="cert-issuer">UTEC</div>
+        <div class="cert-name" data-en="How to Sell on Amazon Without Failing in the Attempt" data-es="Cómo Vender en Amazon y No Fracasar en el Intento">How to Sell on Amazon Without Failing in the Attempt</div>
+      </div>
+
+      <div class="cert-card" data-category="business">
+        <div class="cert-issuer" data-en="Banco de Crédito BCP" data-es="Banco de Crédito BCP">Banco de Crédito BCP</div>
+        <div class="cert-name" data-en="Personal Finance" data-es="Finanzas Personales">Personal Finance</div>
+      </div>
+
+      <div class="cert-card" data-category="business">
+        <div class="cert-issuer">Prima AFP</div>
+        <div class="cert-name" data-en="The ABC of Pension Culture" data-es="ABC de la Cultura Previsional">The ABC of Pension Culture</div>
+      </div>
+
+      <!-- Civic & culture -->
+      <div class="cert-card" data-category="civic">
+        <div class="cert-issuer" data-en="Congress of the Republic of Peru" data-es="Congreso de la República del Perú">Congress of the Republic of Peru</div>
+        <div class="cert-name" data-en="University Parliament — Lima 2021" data-es="Parlamento Universitario — Lima 2021">University Parliament — Lima 2021</div>
+      </div>
+
+      <div class="cert-card" data-category="civic">
+        <div class="cert-issuer" data-en="Congress of the Republic of Peru" data-es="Congreso de la República del Perú">Congress of the Republic of Peru</div>
+        <div class="cert-name" data-en="University Parliament — Parliamentary Training" data-es="Parlamento Universitario — Formación Parlamentaria">University Parliament — Parliamentary Training</div>
+      </div>
+
+      <div class="cert-card" data-category="civic">
+        <div class="cert-issuer" data-en="Congress of the Republic of Peru" data-es="Congreso de la República del Perú">Congress of the Republic of Peru</div>
+        <div class="cert-name" data-en="Analysis of the 1823 Constitution in Peru's Bicentenary" data-es="Análisis de la Constitución de 1823 en el Bicentenario del Perú">Analysis of the 1823 Constitution in Peru's Bicentenary</div>
+      </div>
+
+      <div class="cert-card" data-category="civic">
+        <div class="cert-issuer" data-en="Ministry of Culture of Peru" data-es="Ministerio de Cultura del Perú">Ministry of Culture of Peru</div>
+        <div class="cert-name" data-en="“Hablemos de Racismo” — Anti-Racism Programme" data-es="«Hablemos de Racismo»">“Hablemos de Racismo” — Anti-Racism Programme</div>
+      </div>
+
+      <div class="cert-card" data-category="civic">
+        <div class="cert-issuer" data-en="UTEC · Disruptón 2025" data-es="UTEC · Disruptón 2025">UTEC · Disruptón 2025</div>
+        <div class="cert-name" data-en="“Musoq Q'aswa” — presented at Disruptón 2025, “Art, Culture, Heritage and Technology”" data-es="«Musoq Q'aswa» — presentado en Disruptón 2025, «Arte, cultura, patrimonio y tecnología»">“Musoq Q'aswa” — presented at Disruptón 2025, “Art, Culture, Heritage and Technology”</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= Languages ================= -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title" data-en="Languages" data-es="Idiomas">Languages</h2>
+    </div>
+
+    <div class="lang-list">
+      <div class="lang-row">
+        <span class="lang-name" data-en="Spanish" data-es="Español">Spanish</span>
+        <span class="lang-level" data-en="Native" data-es="Nativo">Native</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-name" data-en="Quechua" data-es="Quechua">Quechua</span>
+        <span class="lang-level" data-en="Native" data-es="Nativo">Native</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-name" data-en="English" data-es="Inglés">English</span>
+        <span class="lang-level" data-en="B1 certified (TOEFL ITP) · B2 on completion of the Conversa Academics programme at UTEC" data-es="B1 certificado (TOEFL ITP) · B2 al término del programa Conversa Academics de UTEC">B1 certified (TOEFL ITP) · B2 on completion of the Conversa Academics programme at UTEC</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-name" data-en="Russian" data-es="Ruso">Russian</span>
+        <span class="lang-level" data-en="A1 — Gateway to Russia programme" data-es="A1 — programa Gateway to Russia">A1 — Gateway to Russia programme</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-name" data-en="Mandarin Chinese" data-es="Chino Mandarín">Mandarin Chinese</span>
+        <span class="lang-level" data-en="Beginner — in progress, self-directed study" data-es="Principiante — en curso, estudio autodirigido">Beginner — in progress, self-directed study</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Contact ================= -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title" data-en="Contact" data-es="Contacto">Contact</h2>
+      <p class="section-lead" data-en="Open to research, engineering and teaching opportunities" data-es="Abierto a oportunidades de investigación, ingeniería y docencia">Open to research, engineering and teaching opportunities</p>
+    </div>
+
+    <div class="tool-strip" style="grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); max-width: 720px;">
+      <a class="tool-tile" href="mailto:franklin.soncco@utec.edu.pe">
+        <img src="images/gmail.webp" alt="" loading="lazy">
+        <span>franklin.soncco@utec.edu.pe</span>
+      </a>
+      <a class="tool-tile" href="https://www.linkedin.com/in/franklin-david-soncco-machaca/" target="_blank" rel="noopener">
+        <img src="images/lideklin.png" alt="" loading="lazy">
+        <span data-en="LinkedIn profile" data-es="Perfil de LinkedIn">LinkedIn profile</span>
+      </a>
+      <a class="tool-tile" href="https://github.com/FranklinSoncco" target="_blank" rel="noopener">
+        <img src="images/github.jpeg" alt="" loading="lazy">
+        <span>github.com/FranklinSoncco</span>
+      </a>
+    </div>
+
+    <div class="def-list mt-2" style="max-width: var(--maxw-prose);">
+      <div class="def-row">
+        <div class="def-key">ORCID</div>
+        <div class="def-val"><a href="https://orcid.org/0009-0009-8311-2465" target="_blank" rel="noopener">0009-0009-8311-2465</a></div>
+      </div>
+      <div class="def-row">
+        <div class="def-key" data-en="Based in" data-es="Ubicación">Based in</div>
+        <div class="def-val" data-en="Lima, Peru" data-es="Lima, Perú">Lima, Peru</div>
+      </div>
+      <div class="def-row">
+        <div class="def-key" data-en="Meetings" data-es="Reuniones">Meetings</div>
+        <div class="def-val" data-en="Available on Zoom, Google Meet, Microsoft Teams and Webex" data-es="Disponible por Zoom, Google Meet, Microsoft Teams y Webex">Available on Zoom, Google Meet, Microsoft Teams and Webex</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3 class="footer-name">Franklin David Soncco Machaca</h3>
+        <p class="footer-role" data-en="Mechatronics Engineer — Robotics, Industrial Automation &amp; Artificial Intelligence" data-es="Ingeniero Mecatrónico — Robótica, Automatización Industrial e Inteligencia Artificial">Mechatronics Engineer — Robotics, Industrial Automation &amp; Artificial Intelligence</p>
+      </div>
+      <div class="social-links">
+        <a href="mailto:franklin.soncco@utec.edu.pe" title="Email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/franklin-david-soncco-machaca/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.47-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="https://orcid.org/0009-0009-8311-2465" target="_blank" rel="noopener" title="ORCID" aria-label="ORCID">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0ZM7.37 4.38a.95.95 0 1 1 0 1.9.95.95 0 0 1 0-1.9Zm-.72 3.04h1.44v10.04H6.65V7.42Zm3.56 0h3.9c3.71 0 5.34 2.65 5.34 5.02 0 2.58-2.02 5.02-5.32 5.02h-3.92V7.42Zm1.44 1.3v7.44h2.3c2.36 0 4.05-1.67 4.05-3.72s-1.69-3.72-4.05-3.72h-2.3Z"/></svg>
+        </a>
+        <a href="https://github.com/FranklinSoncco" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.41-4.03-1.41-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2026 Franklin David Soncco Machaca" data-es="© 2026 Franklin David Soncco Machaca">© 2026 Franklin David Soncco Machaca</p>
+      <p data-en="Lima, Peru" data-es="Lima, Perú">Lima, Peru</p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="mediaModal" role="dialog" aria-modal="true" aria-label="Media viewer">
+  <div class="modal-shell">
+    <div class="modal-bar">
+      <span class="modal-title"></span>
+      <div class="modal-tools">
+        <a class="btn btn-sm modal-open-new" href="#" target="_blank" rel="noopener" data-en="Open in new tab" data-es="Abrir en pestaña nueva">Open in new tab</a>
+        <button class="modal-close" aria-label="Close">&times;</button>
+      </div>
+    </div>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,466 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills & Projects | Franklin Soncco</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-en="Projects &amp; Skills &mdash; Franklin Soncco" data-es="Proyectos y Habilidades &mdash; Franklin Soncco">Projects &amp; Skills &mdash; Franklin Soncco</title>
+<meta name="description" content="Twenty engineering and business projects in robotics, control, machine learning and industrial automation, with full technical skill inventory.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;450;500;550;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-gradient" data-en="Franklin Soncco" data-es="Franklin Soncco">Franklin Soncco</span>
-            </a>
-            <div class="nav-links">
-                <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
-                <a href="research.html" data-en="Research & Academia" data-es="Investigación y Academia">Research & Academia</a>
-                <a href="skills.html" class="active" data-en="Skills & Projects" data-es="Habilidades y Proyectos">Skills & Projects</a>
-                <a href="experience.html" data-en="Experience" data-es="Experiencia">Experience</a>
-                <a href="about.html" data-en="About" data-es="Acerca de">About</a>
-                <button class="lang-toggle" id="langToggle">
-                    <span class="lang-option active" data-lang="en">EN</span>
-                    <span class="separator">|</span>
-                    <span class="lang-option" data-lang="es">ES</span>
-                </button>
-            </div>
-            <div class="mobile-menu-toggle" id="mobileMenuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+<a href="#main" class="skip-link" data-en="Skip to content" data-es="Ir al contenido">Skip to content</a>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-links">
+      <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+      <a href="research.html" data-en="Research" data-es="Investigación">Research</a>
+      <a href="skills.html" data-en="Projects &amp; Skills" data-es="Proyectos y Habilidades">Projects &amp; Skills</a>
+      <a href="experience.html" data-en="Experience" data-es="Experiencia">Experience</a>
+      <a href="about.html" data-en="About" data-es="Perfil">About</a>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-option active" data-lang="en">EN</span>
+        <span class="separator">|</span>
+        <span class="lang-option" data-lang="es">ES</span>
+      </button>
+    </div>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main id="main">
+
+<div class="container">
+  <header class="page-head">
+    <h1 class="page-title" data-en="Projects &amp; Skills" data-es="Proyectos y Habilidades">Projects &amp; Skills</h1>
+    <p class="page-sub" data-en="Twenty projects organised by my three areas of institutional specialisation — Robotics, Industrial Automation and Artificial Intelligence — followed by the business-track work. Every entry links to its supporting video, technical report or schematic." data-es="Veinte proyectos organizados según mis tres áreas de especialización institucional — Robótica, Automatización Industrial e Inteligencia Artificial — seguidos del trabajo de la línea de negocios. Cada entrada enlaza su video, informe técnico o esquema de respaldo.">Twenty projects organised by my three areas of institutional specialisation — Robotics, Industrial Automation and Artificial Intelligence — followed by the business-track work. Every entry links to its supporting video, technical report or schematic.</p>
+  </header>
+</div>
+
+<!-- ================= Projects ================= -->
+<section class="section--tight">
+  <div class="container">
+
+    <nav class="field-nav" aria-label="Project fields">
+      <a href="#robotics"><span data-en="Robotics" data-es="Robótica">Robotics</span> <b>8</b></a>
+      <a href="#industrial-automation"><span data-en="Industrial Automation" data-es="Automatización Industrial">Industrial Automation</span> <b>6</b></a>
+      <a href="#artificial-intelligence"><span data-en="Artificial Intelligence" data-es="Inteligencia Artificial">Artificial Intelligence</span> <b>3</b></a>
+      <a href="#business-strategy"><span data-en="Business &amp; Strategy" data-es="Negocios y Estrategia">Business &amp; Strategy</span> <b>3</b></a>
     </nav>
 
-    <section class="page-header">
-        <div class="container">
-            <h1 data-en="Skills & Projects" data-es="Habilidades y Proyectos">Skills & Projects</h1>
-            <p data-en="Technical expertise and project portfolio" data-es="Experiencia técnica y portafolio de proyectos">Technical expertise and project portfolio</p>
+    <section id="robotics" class="field-block">
+      <div class="field-head">
+        <span class="field-index">01</span>
+        <div>
+          <h2 class="field-title" data-en="Robotics" data-es="Robótica">Robotics</h2>
+          <p class="field-desc" data-en="Robots and the control that drives them — manipulators, mobile platforms and assistive exoskeletons, together with the modern and nonlinear control strategies that make them move: hierarchical task-priority control, LQR and TV-LQR, sliding mode, impedance control and trajectory optimisation." data-es="Robots y el control que los gobierna — manipuladores, plataformas móviles y exoesqueletos asistivos, junto con las estrategias de control moderno y no lineal que los hacen moverse: control jerárquico por prioridad de tareas, LQR y TV-LQR, modos deslizantes, control por impedancia y optimización de trayectorias.">Robots and the control that drives them — manipulators, mobile platforms and assistive exoskeletons, together with the modern and nonlinear control strategies that make them move: hierarchical task-priority control, LQR and TV-LQR, sliding mode, impedance control and trajectory optimisation.</p>
         </div>
+        <span class="field-count" data-en="8 projects" data-es="8 proyectos">8 projects</span>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card" data-category="robotics">
+          <div class="project-media" data-media="projects/Exoesqueleto%20activo%20de%20miembro%20superior%20de%206%20DoF%20con%20control%20por%20impedancia%20y%20retroalimentaci%C3%B3n%20EMG%20para%20reducci%C3%B3n%20de%20fatiga%20muscular%20en%20la%20cosecha%20manual%20de%20caf%C3%A9.mp4" data-media-title="6-DoF Active Upper-Limb Exoskeleton — Thesis">
+            <img src="thumbs/exoesqueleto-activo-de-miembro-superior-de-6-dof-con-control-por-impedancia-y-retroalimentacion-emg-para-reduccion-de-fatiga-muscular-en-la-cosecha-manual-de-cafe.jpg" alt="" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" opacity=".85"/><path d="m10 8 6 4-6 4V8Z" fill="#16181a"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Thesis · Biorobotics" data-es="Tesis · Biorobótica">Thesis · Biorobotics</div>
+            <h3 data-en="6-DoF Active Upper-Limb Exoskeleton with Impedance Control and EMG Feedback" data-es="Exoesqueleto Activo de Miembro Superior de 6 GdL con Control por Impedancia y Retroalimentación EMG">6-DoF Active Upper-Limb Exoskeleton with Impedance Control and EMG Feedback</h3>
+            <p data-en="Assistive exoskeleton reducing muscular fatigue in manual coffee harvesting. Designed under VDI 2225/2206, validated by FEA, and evaluated experimentally with sEMG: perceived exertion fell from 17 to 7 on the Borg scale." data-es="Exoesqueleto asistivo que reduce la fatiga muscular en la cosecha manual de café. Diseñado bajo VDI 2225/2206, validado por elementos finitos y evaluado experimentalmente con sEMG: el esfuerzo percibido bajó de 17 a 7 en la escala de Borg.">Assistive exoskeleton reducing muscular fatigue in manual coffee harvesting. Designed under VDI 2225/2206, validated by FEA, and evaluated experimentally with sEMG: perceived exertion fell from 17 to 7 on the Borg scale.</p>
+            <div class="project-meta" data-en="Final Degree Project II (PFC II) · team of 3" data-es="Proyecto Final de Carrera II (PFC II) · equipo de 3">Final Degree Project II (PFC II) · team of 3</div>
+            <div class="tech-row"><span>sEMG</span><span>FEA</span><span>PETG-CF</span><span data-en="PD + gravity comp." data-es="PD + comp. gravedad">PD + gravity comp.</span></div>
+            <div class="project-actions">
+              <a class="btn btn-sm" href="research.html" data-en="Full results →" data-es="Resultados completos →">Full results →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="robotics">
+          <div class="project-media" data-media="projects/Simulation.mp4" data-media-title="Hierarchical Kinematic Control for Dual Manipulation">
+            <img src="thumbs/simulation.jpg" alt="" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" opacity=".85"/><path d="m10 8 6 4-6 4V8Z" fill="#16181a"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Robotics" data-es="Robótica">Robotics</div>
+            <h3 data-en="Hierarchical Kinematic Control for Dual Manipulation with Closure Constraints" data-es="Control Cinemático Jerárquico de Manipulación Dual con Restricciones de Cierre">Hierarchical Kinematic Control for Dual Manipulation with Closure Constraints</h3>
+            <p data-en="Task-priority kinematic control of an 18-DoF system for transporting a mobile platform: a 6-DoF unactuated floating base plus 12 actuated joints across two manipulators, with a rigorous formulation guaranteeing coordination under competing priorities." data-es="Control cinemático por prioridad de tareas de un sistema de 18 GdL para transportar una plataforma móvil: una base flotante no actuada de 6 GdL más 12 articulaciones actuadas en dos manipuladores, con una formulación rigurosa que garantiza la coordinación bajo prioridades en competencia.">Task-priority kinematic control of an 18-DoF system for transporting a mobile platform: a 6-DoF unactuated floating base plus 12 actuated joints across two manipulators, with a rigorous formulation guaranteeing coordination under competing priorities.</p>
+            <div class="project-meta" data-en="Course: Advanced Robotics · team project" data-es="Curso: Robótica Avanzada · proyecto en equipo">Course: Advanced Robotics · team project</div>
+            <div class="tech-row"><span>ROS2</span><span>Python</span><span>ESP32</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="robotics">
+          <div class="project-media" data-media="projects/RA%20-%20Final%20Project.mp4" data-media-title="Autonomous UR5 Manipulation with Obstacle Avoidance">
+            <img src="thumbs/ra-final-project.jpg" alt="" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" opacity=".85"/><path d="m10 8 6 4-6 4V8Z" fill="#16181a"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Autonomous Robotics" data-es="Robótica Autónoma">Autonomous Robotics</div>
+            <h3 data-en="Autonomous UR5 Object Manipulation with Obstacle Avoidance" data-es="Manipulación Autónoma de Objetos con UR5 y Evitación de Obstáculos">Autonomous UR5 Object Manipulation with Obstacle Avoidance</h3>
+            <p data-en="Simulated autonomous system on a UR5 arm that detects, localises and manipulates cans using a depth camera and YOLOv8, with RRT-based trajectory generation, collision detection and planning in 3D space." data-es="Sistema autónomo simulado sobre un brazo UR5 que detecta, localiza y manipula latas usando una cámara de profundidad y YOLOv8, con generación de trayectorias basada en RRT, detección de colisiones y planificación en espacio 3D.">Simulated autonomous system on a UR5 arm that detects, localises and manipulates cans using a depth camera and YOLOv8, with RRT-based trajectory generation, collision detection and planning in 3D space.</p>
+            <div class="project-meta" data-en="Course: Autonomous Robotics · team project" data-es="Curso: Robótica Autónoma · proyecto en equipo">Course: Autonomous Robotics · team project</div>
+            <div class="tech-row"><span>ROS2</span><span>YOLOv8</span><span>RRT</span><span>OpenCV</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="robotics">
+          <div class="project-media" data-media="projects/Detecci%C3%B3n%20de%20Se%C3%B1ales%20Visuales%20de%20Advertencia%20en%20Tareas%20de%20Inspecci%C3%B3n%20con%20el%20robot%20TurtleBot%203.mp4" data-media-title="Visual Warning Sign Detection with TurtleBot 3">
+            <img src="thumbs/deteccion-de-senales-visuales-de-advertencia-en-tareas-de-inspeccion-con-el-robot-turtlebot-3.jpg" alt="" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" opacity=".85"/><path d="m10 8 6 4-6 4V8Z" fill="#16181a"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Autonomous Robotics" data-es="Robótica Autónoma">Autonomous Robotics</div>
+            <h3 data-en="Visual Warning Sign Detection for Inspection Tasks with TurtleBot 3" data-es="Detección de Señales Visuales de Advertencia en Tareas de Inspección con el robot TurtleBot 3">Visual Warning Sign Detection for Inspection Tasks with TurtleBot 3</h3>
+            <p data-en="Autonomous navigation driven purely by visual descriptors: the robot searches for warning signs using SIFT features and steers towards them on detection, without relying on a prior map." data-es="Navegación autónoma guiada únicamente por descriptores visuales: el robot busca señales de advertencia mediante características SIFT y se dirige hacia ellas al detectarlas, sin depender de un mapa previo.">Autonomous navigation driven purely by visual descriptors: the robot searches for warning signs using SIFT features and steers towards them on detection, without relying on a prior map.</p>
+            <div class="project-meta" data-en="Course: Autonomous Robotics · team project" data-es="Curso: Robótica Autónoma · proyecto en equipo">Course: Autonomous Robotics · team project</div>
+            <div class="tech-row"><span>Python</span><span>OpenCV</span><span>SIFT</span><span>ROS1</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="robotics">
+          <div class="project-media" data-media="projects/graperobot.jpeg" data-media-title="Autonomous Grape Harvesting Robot">
+            <img src="projects/graperobot.jpeg" alt="Autonomous grape harvesting robot" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Embedded Systems · Agriculture" data-es="Sistemas Embebidos · Agricultura">Embedded Systems · Agriculture</div>
+            <h3 data-en="Autonomous Grape Harvesting Robot" data-es="Robot Autónomo de Cosecha de Uvas">Autonomous Grape Harvesting Robot</h3>
+            <p data-en="Designed and prototyped a 4-DoF robotic arm for autonomous grape harvesting, integrating an ATmega328 and a PSoC 5LP over UART with a Raspberry Pi 4 for higher-level perception." data-es="Diseñé y prototipé un brazo robótico de 4 GdL para la cosecha autónoma de uvas, integrando un ATmega328 y un PSoC 5LP por UART con una Raspberry Pi 4 para la percepción de alto nivel.">Designed and prototyped a 4-DoF robotic arm for autonomous grape harvesting, integrating an ATmega328 and a PSoC 5LP over UART with a Raspberry Pi 4 for higher-level perception.</p>
+            <div class="project-meta" data-en="Course: Introduction to Embedded Systems · team project" data-es="Curso: Introducción a Sistemas Embebidos · proyecto en equipo">Course: Introduction to Embedded Systems · team project</div>
+            <div class="tech-row"><span>ATmega328</span><span>PSoC 5LP</span><span>Raspberry Pi 4</span><span>C / Assembler</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="robotics">
+          <div class="project-media" data-media="projects/Final%20Project%20DSM.mp4" data-media-title="Cascade PID–LQR Self-Balancing Robot">
+            <img src="thumbs/final-project-dsm.jpg" alt="" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" opacity=".85"/><path d="m10 8 6 4-6 4V8Z" fill="#16181a"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Mechatronic Systems Design" data-es="Diseño de Sistemas Mecatrónicos">Mechatronic Systems Design</div>
+            <h3 data-en="Cascade PID–LQR Control and Trajectory Tracking on a Two-Wheel Self-Balancing Robot" data-es="Integración de Control PID–LQR en Cascada y Seguimiento de Trayectorias en un Robot Autobalanceado de Dos Ruedas">Cascade PID–LQR Control and Trajectory Tracking on a Two-Wheel Self-Balancing Robot</h3>
+            <p data-en="Self-balancing robot with a vision-assisted front collection ramp and gripping end-effector. Integrated control, mechanical design, electrical circuits, computer vision and programming into one working platform." data-es="Robot autobalanceado con rampa recolectora frontal asistida por visión y efector final de agarre. Integré control, diseño mecánico, circuitos eléctricos, visión computacional y programación en una sola plataforma funcional.">Self-balancing robot with a vision-assisted front collection ramp and gripping end-effector. Integrated control, mechanical design, electrical circuits, computer vision and programming into one working platform.</p>
+            <div class="project-meta" data-en="Course: Mechatronic Systems Design · team project" data-es="Curso: Diseño de Sistemas Mecatrónicos · proyecto en equipo">Course: Mechatronic Systems Design · team project</div>
+            <div class="tech-row"><span>MyRIO</span><span>Raspberry Pi 4</span><span>LabVIEW</span><span>PID + LQR</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="robotics">
+          <div class="project-media" data-media="projects/Sliding%20Mode%20Control%20para%20un%20brazo%20paralelo%20de%204%20juntas%20y%202DOF.mp4" data-media-title="Sliding Mode Control on a 2-DOF Parallel Arm">
+            <img src="thumbs/sliding-mode-control-para-un-brazo-paralelo-de-4-juntas-y-2dof.jpg" alt="" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" opacity=".85"/><path d="m10 8 6 4-6 4V8Z" fill="#16181a"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Nonlinear Control · Personal project" data-es="Control No Lineal · Proyecto personal">Nonlinear Control · Personal project</div>
+            <h3 data-en="Sliding Mode Control for a 4-Joint, 2-DOF Parallel Arm" data-es="Sliding Mode Control para un Brazo Paralelo de 4 Juntas y 2 GdL">Sliding Mode Control for a 4-Joint, 2-DOF Parallel Arm</h3>
+            <p data-en="Implemented sliding mode control on the Quanser 2-DOF Robot so the end-effector tracks a circle centred at (d/2, d/2) with radius d/6, deriving the matrix equations for the control inputs." data-es="Implementé control por modos deslizantes en el módulo Quanser 2 DOF Robot para que el efector final siga un círculo centrado en (d/2, d/2) de radio d/6, derivando las ecuaciones matriciales de las entradas de control.">Implemented sliding mode control on the Quanser 2-DOF Robot so the end-effector tracks a circle centred at (d/2, d/2) with radius d/6, deriving the matrix equations for the control inputs.</p>
+            <div class="project-meta" data-en="Course: Nonlinear Systems Control · personal project" data-es="Curso: Control de Sistemas No Lineales · proyecto personal">Course: Nonlinear Systems Control · personal project</div>
+            <div class="tech-row"><span>MATLAB</span><span>Simulink</span><span>Quanser</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="robotics">
+          <div class="project-media" data-media="projects/Trajectory%20Optimization%20y%20TV-LQR%20de%20un%20Furuta%20Pendulum.jpeg" data-media-title="Trajectory Optimization and TV-LQR on a Furuta Pendulum">
+            <img src="projects/Trajectory%20Optimization%20y%20TV-LQR%20de%20un%20Furuta%20Pendulum.jpeg" alt="Trajectory optimization and TV-LQR of a Furuta pendulum" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Nonlinear Control · Personal project" data-es="Control No Lineal · Proyecto personal">Nonlinear Control · Personal project</div>
+            <h3 data-en="Trajectory Optimization and TV-LQR on a Furuta Pendulum" data-es="Trajectory Optimization y TV-LQR de un Péndulo de Furuta">Trajectory Optimization and TV-LQR on a Furuta Pendulum</h3>
+            <p data-en="Swing-up of the Quanser QUBE-Servo Furuta pendulum from x₀ = [0,0,0,0] to x_f = [0,π,0,0] under saturation |u| ≤ 10 and |q₁| ≤ π/2, then TV-LQR stabilisation of the optimised trajectory from a perturbed initial condition." data-es="Elevación del péndulo de Furuta Quanser QUBE-Servo desde x₀ = [0,0,0,0] hasta x_f = [0,π,0,0] con saturación |u| ≤ 10 y |q₁| ≤ π/2, seguida de la estabilización TV-LQR de la trayectoria optimizada desde una condición inicial perturbada.">Swing-up of the Quanser QUBE-Servo Furuta pendulum from x₀ = [0,0,0,0] to x_f = [0,π,0,0] under saturation |u| ≤ 10 and |q₁| ≤ π/2, then TV-LQR stabilisation of the optimised trajectory from a perturbed initial condition.</p>
+            <div class="project-meta" data-en="Course: Nonlinear Systems Control · personal project" data-es="Curso: Control de Sistemas No Lineales · proyecto personal">Course: Nonlinear Systems Control · personal project</div>
+            <div class="tech-row"><span>MATLAB</span><span>Simulink</span><span>TV-LQR</span></div>
+          </div>
+        </article>
+
+      </div>
     </section>
 
-    <section class="tech-skills">
-        <div class="container">
-            <h2 class="section-title" data-en="Technical Skills" data-es="Habilidades Técnicas">Technical Skills</h2>
-            
-            <div class="skill-category">
-                <h3 data-en="Programming & Robotics" data-es="Programación y Robótica">Programming & Robotics</h3>
-                <div class="tech-tags">
-                    <span>Python</span>
-                    <span>C++</span>
-                    <span>C</span>
-                    <span>MATLAB</span>
-                    <span>Simulink</span>
-                    <span>LabVIEW</span>
-                    <span>SQL</span>
-                    <span>ROS2</span>
-                    <span>SLAM</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3 data-en="AI & Machine Learning" data-es="IA y Aprendizaje Automático">AI & Machine Learning</h3>
-                <div class="tech-tags">
-                    <span>Deep Learning</span>
-                    <span>Reinforcement Learning</span>
-                    <span>Neural Networks</span>
-                    <span>Computer Vision</span>
-                    <span>YOLOv8</span>
-                    <span>OpenCV</span>
-                    <span>TensorFlow</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3 data-en="Industrial Automation" data-es="Automatización Industrial">Industrial Automation</h3>
-                <div class="tech-tags">
-                    <span>PLC Programming</span>
-                    <span>TIA Portal (Ladder)</span>
-                    <span>Studio 5000</span>
-                    <span>FluidSIM</span>
-                    <span>CODESYS</span>
-                    <span>Siemens S7-1200</span>
-                    <span>Allen Bradley</span>
-                    <span>FESTO</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3 data-en="Electronics & Embedded Systems" data-es="Electrónica y Sistemas Embebidos">Electronics & Embedded Systems</h3>
-                <div class="tech-tags">
-                    <span>ATMEGA328P</span>
-                    <span>PSoC 5LP</span>
-                    <span>ESP32</span>
-                    <span>Raspberry Pi</span>
-                    <span>MyRIO</span>
-                    <span>FPGA (Basys 3)</span>
-                    <span>VHDL</span>
-                    <span>Assembly</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3 data-en="CAD & Simulation" data-es="CAD y Simulación">CAD & Simulation</h3>
-                <div class="tech-tags">
-                    <span>Autodesk Inventor</span>
-                    <span>Fusion 360</span>
-                    <span>Simscape</span>
-                    <span>Altium Designer</span>
-                    <span>EasyEDA</span>
-                    <span>NI Multisim</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3 data-en="Control Systems" data-es="Sistemas de Control">Control Systems</h3>
-                <div class="tech-tags">
-                    <span>PID Control</span>
-                    <span>LQR/LQG</span>
-                    <span>Model Predictive Control (MPC)</span>
-                    <span>Nonlinear Control</span>
-                    <span>Intelligent Control</span>
-                    <span>Process Control</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3 data-en="Tools & Software" data-es="Herramientas y Software">Tools & Software</h3>
-                <div class="tech-tags">
-                    <span>LaTeX</span>
-                    <span>Git/GitHub</span>
-                    <span>R Studio</span>
-                    <span>Canva</span>
-                    <span>Inkscape</span>
-                    <span>DrawIO</span>
-                    <span>Power Apps</span>
-                    <span>Power BI</span>
-                </div>
-            </div>
+    <section id="industrial-automation" class="field-block">
+      <div class="field-head">
+        <span class="field-index">02</span>
+        <div>
+          <h2 class="field-title" data-en="Industrial Automation" data-es="Automatización Industrial">Industrial Automation</h2>
+          <p class="field-desc" data-en="Automation of real industrial processes — PLC and SCADA architectures, P&amp;ID documentation to ISA standards, instrument sizing and selection, pneumatic and hydraulic circuit design, and digital hardware implemented on FPGA." data-es="Automatización de procesos industriales reales — arquitecturas PLC y SCADA, documentación P&amp;ID según normas ISA, dimensionamiento y selección de instrumentos, diseño de circuitos neumáticos e hidráulicos, y hardware digital implementado sobre FPGA.">Automation of real industrial processes — PLC and SCADA architectures, P&amp;ID documentation to ISA standards, instrument sizing and selection, pneumatic and hydraulic circuit design, and digital hardware implemented on FPGA.</p>
         </div>
+        <span class="field-count" data-en="6 projects" data-es="6 proyectos">6 projects</span>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card" data-category="industrial-automation">
+          <div class="project-media" data-media="projects/P%26ID%20ET600%20Acondicionamiento%20de%20aire.pdf" data-media-title="P&ID — ET600 Air Conditioning Module">
+            <img src="thumbs/p-id-et600-acondicionamiento-de-aire.jpg" alt="" loading="lazy">
+          
+          <div class="play-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M11 8v6M8 11h6"/></svg></div>
+        </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Industrial Instrumentation" data-es="Instrumentación Industrial">Industrial Instrumentation</div>
+            <h3 data-en="Full Automation of the GUNT ET600 Air Conditioning Module" data-es="Automatización Integral del Módulo GUNT ET600 de Acondicionamiento de Aire">Full Automation of the GUNT ET600 Air Conditioning Module</h3>
+            <p data-en="Automated system on a Siemens S7-1500 PLC with PROFINET and SCADA supervision. Delivered complete technical documentation — P&amp;ID to ISA standards, descriptive memory, TAG list and instrument specifications — with PID loops for temperature (0–50 °C), relative humidity (0–100%) and air flow (0–1150 m³/h)." data-es="Sistema automatizado sobre un PLC Siemens S7-1500 con PROFINET y supervisión SCADA. Entregué la documentación técnica completa — P&amp;ID según normas ISA, memoria descriptiva, listado de TAGs y especificaciones de instrumentación — con lazos PID para temperatura (0–50 °C), humedad relativa (0–100%) y flujo de aire (0–1150 m³/h).">Automated system on a Siemens S7-1500 PLC with PROFINET and SCADA supervision. Delivered complete technical documentation — P&amp;ID to ISA standards, descriptive memory, TAG list and instrument specifications — with PID loops for temperature (0–50 °C), relative humidity (0–100%) and air flow (0–1150 m³/h).</p>
+            <div class="project-meta" data-en="Course: Industrial Instrumentation · team project" data-es="Curso: Instrumentación Industrial · proyecto en equipo">Course: Industrial Instrumentation · team project</div>
+            <div class="tech-row"><span>S7-1500</span><span>PROFINET</span><span>SCADA</span><span>Endress+Hauser</span><span>SITRANS</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="industrial-automation">
+          <div class="project-media" data-media="projects/yogurt.png" data-media-title="Semi-Autonomous Yoghurt Bottling Plant">
+            <img src="projects/yogurt.png" alt="Semi-autonomous yoghurt bottling plant" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Sensors &amp; Actuators" data-es="Sensores y Actuadores">Sensors &amp; Actuators</div>
+            <h3 data-en="Semi-Autonomous Yoghurt Bottling Plant" data-es="Planta Semiautónoma Envasadora de Yogurt">Semi-Autonomous Yoghurt Bottling Plant</h3>
+            <p data-en="Process design where disinfected bottles are loaded manually, a sensor confirms six bottles are present in the work zone, two cylinders raise the support until they fill completely, and the product passes to automatic capping." data-es="Diseño de proceso en el que las botellas desinfectadas se cargan manualmente, un sensor confirma la presencia de seis botellas en la zona de trabajo, dos cilindros elevan el soporte hasta el llenado completo y el producto pasa al tapado automático.">Process design where disinfected bottles are loaded manually, a sensor confirms six bottles are present in the work zone, two cylinders raise the support until they fill completely, and the product passes to automatic capping.</p>
+            <div class="project-meta" data-en="Course: Sensors and Actuators · team project" data-es="Curso: Sensores y Actuadores · proyecto en equipo">Course: Sensors and Actuators · team project</div>
+            <div class="tech-row"><span>Autodesk Fusion</span><span>FESTO PARTdataManager</span><span>TIA Portal</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="industrial-automation">
+          <div class="project-media" data-media="projects/Implementaci%C3%B3n%20de%20un%20Circuito%20Electroneum%C3%A1tico.mp4" data-media-title="Electropneumatic Circuit Implementation">
+            <img src="thumbs/implementacion-de-un-circuito-electroneumatico.jpg" alt="" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" opacity=".85"/><path d="m10 8 6 4-6 4V8Z" fill="#16181a"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Hydraulic &amp; Pneumatic Systems" data-es="Sistemas Hidráulicos y Neumáticos">Hydraulic &amp; Pneumatic Systems</div>
+            <h3 data-en="Electropneumatic Circuit with Latching and Timed Cycling" data-es="Implementación de un Circuito Electroneumático con Enclavamiento y Ciclo Temporizado">Electropneumatic Circuit with Latching and Timed Cycling</h3>
+            <p data-en="Pressing S1 latches the circuit; A+ extends until sensor a1 triggers the timer and A−. The non-return valve holds A− until the timer elapses, producing a continuous loop broken only by releasing S1. Built from 17 FESTO modules." data-es="Al pulsar S1 el circuito queda enclavado; A+ se extiende hasta que el sensor a1 activa el temporizador y A−. La válvula antirretorno retiene A− hasta que transcurre el tiempo, generando un bucle continuo que solo se corta al desenclavar S1. Implementado con 17 módulos FESTO.">Pressing S1 latches the circuit; A+ extends until sensor a1 triggers the timer and A−. The non-return valve holds A− until the timer elapses, producing a continuous loop broken only by releasing S1. Built from 17 FESTO modules.</p>
+            <div class="project-meta" data-en="Course: Hydraulic and Pneumatic Systems · team project" data-es="Curso: Sistemas Hidráulicos y Neumáticos · proyecto en equipo">Course: Hydraulic and Pneumatic Systems · team project</div>
+            <div class="tech-row"><span>FLUIDSIM 6</span><span data-en="FESTO Pneumatics" data-es="FESTO Neumática">FESTO Pneumatics</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="industrial-automation">
+          <div class="project-media" data-media="projects/Circuito%20Hidr%C3%A1ulico%20Divisor%20de%20Caudal.mp4" data-media-title="Hydraulic Flow Divider Circuit">
+            <img src="thumbs/circuito-hidraulico-divisor-de-caudal.jpg" alt="" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" opacity=".85"/><path d="m10 8 6 4-6 4V8Z" fill="#16181a"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Hydraulic &amp; Pneumatic Systems" data-es="Sistemas Hidráulicos y Neumáticos">Hydraulic &amp; Pneumatic Systems</div>
+            <h3 data-en="Hydraulic Flow Divider Circuit" data-es="Circuito Hidráulico Divisor de Caudal">Hydraulic Flow Divider Circuit</h3>
+            <p data-en="A flow-dividing distribution valve splits the supply from P into equal parts between A and B, using metering orifices and variable control resistances so that pressure equalises across both points as the flow divides." data-es="Una válvula distribuidora divisora de caudal reparte el flujo de P en partes iguales entre A y B, mediante orificios de medición y resistencias de control variables, de modo que la presión se iguala en ambos puntos al repartirse el caudal.">A flow-dividing distribution valve splits the supply from P into equal parts between A and B, using metering orifices and variable control resistances so that pressure equalises across both points as the flow divides.</p>
+            <div class="project-meta" data-en="Course: Hydraulic and Pneumatic Systems · team project" data-es="Curso: Sistemas Hidráulicos y Neumáticos · proyecto en equipo">Course: Hydraulic and Pneumatic Systems · team project</div>
+            <div class="tech-row"><span>FLUIDSIM 6</span><span data-en="FESTO Hydraulics" data-es="FESTO Hidráulica">FESTO Hydraulics</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="industrial-automation">
+          <div class="project-media" data-media="projects/Circuito%20Electrohidr%C3%A1ulico%20para%20Controlar%20el%20Motor%20Hidr%C3%A1ulico.jpeg" data-media-title="Electrohydraulic Circuit for Hydraulic Motor Direction Control">
+            <img src="projects/Circuito%20Electrohidr%C3%A1ulico%20para%20Controlar%20el%20Motor%20Hidr%C3%A1ulico.jpeg" alt="Electrohydraulic circuit schematic" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Hydraulic &amp; Pneumatic Systems" data-es="Sistemas Hidráulicos y Neumáticos">Hydraulic &amp; Pneumatic Systems</div>
+            <h3 data-en="Electrohydraulic Circuit for Hydraulic Motor Direction Control" data-es="Circuito Electrohidráulico para Controlar el Motor Hidráulico">Electrohydraulic Circuit for Hydraulic Motor Direction Control</h3>
+            <p data-en="Electrohydraulic circuit controlling the rotation direction of a hydraulic motor through relay logic and directional valves, simulated and then physically implemented on the FESTO hydraulics training module." data-es="Circuito electrohidráulico que controla el sentido de giro de un motor hidráulico mediante lógica de relés y válvulas direccionales, simulado y luego implementado físicamente en el módulo educativo de hidráulica FESTO.">Electrohydraulic circuit controlling the rotation direction of a hydraulic motor through relay logic and directional valves, simulated and then physically implemented on the FESTO hydraulics training module.</p>
+            <div class="project-meta" data-en="Course: Hydraulic and Pneumatic Systems · team project" data-es="Curso: Sistemas Hidráulicos y Neumáticos · proyecto en equipo">Course: Hydraulic and Pneumatic Systems · team project</div>
+            <div class="tech-row"><span>FLUIDSIM 6</span><span data-en="FESTO Hydraulics" data-es="FESTO Hidráulica">FESTO Hydraulics</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="industrial-automation">
+          <div class="project-media" data-media="projects/Proyecto%20-%20ALU.pdf" data-media-title="8-bit ALU — Technical report">
+            <img src="thumbs/alu.jpg" alt="" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Digital Circuits" data-es="Circuitos Digitales">Digital Circuits</div>
+            <h3 data-en="8-bit Arithmetic Logic Unit on a Basys 3 Artix-7 FPGA" data-es="Unidad Lógica Aritmética de 8 bits en FPGA Basys 3 Artix-7">8-bit Arithmetic Logic Unit on a Basys 3 Artix-7 FPGA</h3>
+            <p data-en="Designed and implemented an 8-bit ALU capable of three operations — OR, FADD and SMULL — described in VHDL and synthesised in Vivado for the Basys 3 Artix-7 board." data-es="Diseñé e implementé una ALU de 8 bits capaz de realizar tres operaciones — OR, FADD y SMULL — descrita en VHDL y sintetizada en Vivado para la tarjeta Basys 3 Artix-7.">Designed and implemented an 8-bit ALU capable of three operations — OR, FADD and SMULL — described in VHDL and synthesised in Vivado for the Basys 3 Artix-7 board.</p>
+            <div class="project-meta" data-en="Course: Digital Circuits · team project" data-es="Curso: Circuitos Digitales · proyecto en equipo">Course: Digital Circuits · team project</div>
+            <div class="tech-row"><span>VHDL</span><span>Vivado</span><span>Basys 3</span><span>Artix-7</span></div>
+            <div class="project-actions">
+              <button class="btn btn-sm" data-media="projects/ALU.mp4" data-media-title="8-bit ALU — Demonstration clip" data-en="Demonstration clip" data-es="Video de demostración">Demonstration clip</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </section>
 
-    <section class="all-projects">
-        <div class="container">
-            <h2 class="section-title" data-en="Project Portfolio" data-es="Portafolio de Proyectos">Project Portfolio</h2>
-            
-            <div class="projects-grid">
-
-
-                <div class="project-card">
-                    <div class="project-evidence">
-                        <img src="projects/graperobot.jpeg" alt="Grape Robot">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Autonomous Grape Harvesting Robot</h3>
-                            <span class="project-tag">Embedded Systems</span>
-                        </div>
-                        <p>4DOF robotic arm for autonomous grape harvesting using ATMEGA328, PSoC 5LP, and Raspberry Pi4.</p>
-                        <div class="project-tech">
-                            <span>ATMEGA328</span>
-                            <span>PSoC 5LP</span>
-                            <span>Raspberry Pi</span>
-                            <span>C/Assembly</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-evidence">
-                        <video controls poster="images/alu-thumbnail.jpg">
-                            <source src="projects/ALU.mp4" type="video/mp4">
-                            Your browser does not support video.
-                        </video>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 data-en="8-bit ALU Implementation" data-es="Implementación de ALU de 8 bits">
-                                8-bit ALU Implementation
-                            </h3>
-                            <span class="project-tag" data-en="Digital Circuits" data-es="Circuitos Digitales">
-                                Digital Circuits
-                            </span>
-                        </div>
-                        <p data-en="Designed and implemented 8-bit Arithmetic Logic Unit on Basys 3 Artix-7 FPGA capable of OR, FADD, SMULL operations." 
-                        data-es="Diseñé e implementé una Unidad Lógica Aritmética de 8 bits en FPGA Basys 3 Artix-7 capaz de realizar operaciones OR, FADD, SMULL.">
-                            Designed and implemented 8-bit Arithmetic Logic Unit on Basys 3 Artix-7 FPGA capable of OR, FADD, SMULL operations.
-                        </p>
-                        <div class="project-tech">
-                            <span>FPGA</span>
-                            <span>VHDL</span>
-                            <span>Vivado</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-evidence">
-                        <img src="projects/yogurt.png" alt="Yogurt Packaging Plant">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 data-en="Semi-Autonomous Yogurt Packaging Plant" 
-                                data-es="Planta Semiautónoma de Envasado de Yogurt">
-                                Semi-Autonomous Yogurt Packaging Plant
-                            </h3>
-                            <span class="project-tag" data-en="Sensors and Actuators" 
-                                data-es="Sensores y Actuadores">
-                                Sensors and Actuators
-                            </span>
-                        </div>
-                        <p data-en="Automated filling and capping system with sensor-based bottle detection and pneumatic cylinder control." 
-                        data-es="Sistema automatizado de llenado y tapado con detección de botellas basada en sensores y control de cilindros neumáticos.">
-                            Automated filling and capping system with sensor-based bottle detection and pneumatic cylinder control.
-                        </p>
-                        <div class="project-tech">
-                            <span>PLC</span>
-                            <span>FluidSIM</span>
-                            <span>FESTO</span>
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="project-card">
-                    <div class="project-evidence">
-                        <iframe src="projects/P&ID ET600 Acondicionamiento de aire.pdf" frameborder="0"></iframe>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 data-en="ET600 Air Conditioning Module Automation" 
-                                data-es="Automatización de Módulo de Acondicionamiento de Aire ET600">
-                                ET600 Air Conditioning Module Automation
-                            </h3>
-                            <span class="project-tag" data-en="Industrial Instrumentation" 
-                                data-es="Instrumentación Industrial">
-                                Industrial Instrumentation
-                            </span>
-                        </div>
-                        <p data-en="Industrial automation system for GUNT ET600 with Siemens S7-1500 PLC, PROFINET network, and SCADA supervision. Implemented PID control for temperature, humidity, and airflow with complete P&ID documentation (ISA standards) and energy efficiency optimization." 
-                        data-es="Sistema de automatización industrial para GUNT ET600 con PLC Siemens S7-1500, red PROFINET y supervisión SCADA. Implementé control PID para temperatura, humedad y flujo de aire con documentación P&ID completa (estándares ISA) y optimización de eficiencia energética.">
-                            Industrial automation system for GUNT ET600 with Siemens S7-1500 PLC, PROFINET network, and SCADA supervision. Implemented PID control for temperature, humidity, and airflow with complete P&ID documentation (ISA standards) and energy efficiency optimization.
-                        </p>
-                        <div class="project-tech">
-                            <span>PLC Siemens S7-1500</span>
-                            <span>SCADA</span>
-                            <span>P&ID</span>
-                            <span>PID Control</span>
-                            <span>PROFINET</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-evidence">
-                        <video controls poster="images/self-balancing-robot-thumbnail.jpg">
-                            <source src="projects/Final Project DSM.mp4" type="video/mp4">
-                            Your browser does not support video.
-                        </video>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 data-en="Self-Balancing Robot with Vision" 
-                                data-es="Robot Autobalanceado con Visión">
-                                Self-Balancing Robot with Vision
-                            </h3>
-                            <span class="project-tag" data-en="Mecatronics System Design" 
-                                data-es="Diseño de Sistemas Mecatrónicos">
-                                Mecatronics System Design
-                            </span>
-                        </div>
-                        <p data-en="Two-wheel self-balancing robot with PID-LQR cascade control and vision-assisted gripper for object collection." 
-                        data-es="Robot autobalanceado de dos ruedas con control en cascada PID-LQR y pinza asistida por visión para recolección de objetos.">
-                            Two-wheel self-balancing robot with PID-LQR cascade control and vision-assisted gripper for object collection.
-                        </p>
-                        <div class="project-tech">
-                            <span>MyRIO</span>
-                            <span>Raspberry Pi</span>
-                            <span>LabVIEW</span>
-                            <span>Computer Vision</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-evidence">
-                        <video controls poster="images/dual-arm-robot-thumbnail.jpg">
-                            <source src="projects/Simulation.mp4" type="video/mp4">
-                            Your browser does not support video.
-                        </video>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 data-en="Dual-Arm Mobile Platform Control" 
-                                data-es="Control de Plataforma Móvil de Brazos Duales">
-                                Dual-Arm Mobile Platform Control
-                            </h3>
-                            <span class="project-tag" data-en="Advanced Robotics" 
-                                data-es="Robótica Avanzada">
-                                Advanced Robotics
-                            </span>
-                        </div>
-                        <p data-en="Hierarchical kinematic control for dual manipulation with 6DOF floating base and 12DOF manipulators (18DOF total)." 
-                        data-es="Control cinemático jerárquico para manipulación dual con base flotante de 6DOF y manipuladores de 12DOF (18DOF total).">
-                            Hierarchical kinematic control for dual manipulation with 6DOF floating base and 12DOF manipulators (18DOF total).
-                        </p>
-                        <div class="project-tech">
-                            <span>ROS2</span>
-                            <span>Python</span>
-                            <span>ESP32</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-evidence">
-                        <video controls poster="images/ur5-robot-thumbnail.jpg">
-                            <source src="projects/RA - Final Project.mp4" type="video/mp4">
-                            Your browser does not support video.
-                        </video>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 data-en="Autonomous UR5 Object Manipulation" 
-                                data-es="Manipulación Autónoma de Objetos UR5">
-                                Autonomous UR5 Object Manipulation
-                            </h3>
-                            <span class="project-tag" data-en="Autonomous Robotics" 
-                                data-es="Robótica Autónoma">
-                                Autonomous Robotics
-                            </span>
-                        </div>
-                        <p data-en="Object detection and manipulation using YOLOv8, RRT path planning, and 3D collision detection." 
-                        data-es="Detección y manipulación de objetos usando YOLOv8, planificación de ruta RRT y detección de colisiones 3D.">
-                            Object detection and manipulation using YOLOv8, RRT path planning, and 3D collision detection.
-                        </p>
-                        <div class="project-tech">
-                            <span>ROS2</span>
-                            <span>YOLOv8</span>
-                            <span>OpenCV</span>
-                            <span>Python</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-evidence">
-                        <iframe src="projects/HAR.pdf" frameborder="0"></iframe>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 data-en="Human Activity Recognition" 
-                                data-es="Reconocimiento de Actividad Humana">
-                                Human Activity Recognition
-                            </h3>
-                            <span class="project-tag" data-en="Machine Learning" 
-                                data-es="Aprendizaje Automático">
-                                Machine Learning
-                            </span>
-                        </div>
-                        <p data-en="Classification of human activities using smartphone sensor data with PyTS, TSFresh, and ML models." 
-                        data-es="Clasificación de actividades humanas usando datos de sensores de smartphone con PyTS, TSFresh y modelos ML.">
-                            Classification of human activities using smartphone sensor data with PyTS, TSFresh, and ML models.
-                        </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>PyTS</span>
-                            <span>Scikit-learn</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-evidence">
-                        <img src="projects/pelicula.png" alt="Movie Recommendation System">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 data-en="Movie Recommendation System" 
-                                data-es="Sistema de Recomendación de Películas">
-                                Movie Recommendation System
-                            </h3>
-                            <span class="project-tag" data-en="Machine Learning" 
-                                data-es="Aprendizaje Automático">
-                                Machine Learning
-                            </span>
-                        </div>
-                        <p data-en="Clustering-based recommendation using poster image features (HOG, color, texture) with PCA/LDA dimensionality reduction." 
-                        data-es="Recomendación basada en clustering usando características de imágenes de posters (HOG, color, textura) con reducción de dimensionalidad PCA/LDA.">
-                            Clustering-based recommendation using poster image features (HOG, color, texture) with PCA/LDA dimensionality reduction.
-                        </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Computer Vision</span>
-                            <span>Clustering</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-evidence">
-                        <img src="projects/imu_anomaly_hitting_arm.png" alt="Industrial Robot Anomaly Detection">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3 data-en="Industrial Robot Anomaly Detection" 
-                                data-es="Detección de Anomalías en Robot Industrial">
-                                Industrial Robot Anomaly Detection
-                            </h3>
-                            <span class="project-tag" data-en="Machine Learning" 
-                                data-es="Aprendizaje Automático">
-                                Machine Learning
-                            </span>
-                        </div>
-                        <p data-en="Multiclass anomaly classification using ROCKET/MiniROCKET with IMU sensor time series for predictive maintenance." 
-                        data-es="Clasificación multiclase de anomalías usando ROCKET/MiniROCKET con series temporales de sensores IMU para mantenimiento predictivo.">
-                            Multiclass anomaly classification using ROCKET/MiniROCKET with IMU sensor time series for predictive maintenance.
-                        </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Time Series</span>
-                            <span>ROCKET</span>
-                            <span>SVM</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+    <section id="artificial-intelligence" class="field-block">
+      <div class="field-head">
+        <span class="field-index">03</span>
+        <div>
+          <h2 class="field-title" data-en="Artificial Intelligence" data-es="Inteligencia Artificial">Artificial Intelligence</h2>
+          <p class="field-desc" data-en="Machine learning applied to sensor data and perception — automatic feature extraction from time series, unsupervised clustering over visual descriptors, and classifiers tuned for efficiency so they can run on embedded hardware." data-es="Aprendizaje automático aplicado a datos de sensores y percepción — extracción automática de características en series temporales, agrupamiento no supervisado sobre descriptores visuales y clasificadores ajustados para ejecutarse en hardware embebido.">Machine learning applied to sensor data and perception — automatic feature extraction from time series, unsupervised clustering over visual descriptors, and classifiers tuned for efficiency so they can run on embedded hardware.</p>
         </div>
+        <span class="field-count" data-en="3 projects" data-es="3 proyectos">3 projects</span>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card" data-category="artificial-intelligence">
+          <div class="project-media" data-media="projects/HAR.pdf" data-media-title="Human Activity Recognition — Report">
+            <img src="thumbs/har.jpg" alt="" loading="lazy">
+          
+          <div class="play-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M11 8v6M8 11h6"/></svg></div>
+        </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Machine Learning" data-es="Machine Learning">Machine Learning</div>
+            <h3 data-en="Human Activity Recognition from Smartphone Sensors" data-es="Reconocimiento de Actividad Humana con Sensores de Smartphone">Human Activity Recognition from Smartphone Sensors</h3>
+            <p data-en="Classification of human activity from accelerometer and gyroscope data, using automatic feature extraction with PyTS and TSFresh, logistic regression and decision-tree models, evaluated by accuracy and F1-score." data-es="Clasificación de actividad humana a partir de datos de acelerómetro y giroscopio, con extracción automática de características usando PyTS y TSFresh, modelos de regresión logística y árboles de decisión, evaluados con accuracy y F1-score.">Classification of human activity from accelerometer and gyroscope data, using automatic feature extraction with PyTS and TSFresh, logistic regression and decision-tree models, evaluated by accuracy and F1-score.</p>
+            <div class="project-meta" data-en="Course: Machine Learning · team project" data-es="Curso: Machine Learning · proyecto en equipo">Course: Machine Learning · team project</div>
+            <div class="tech-row"><span>Python</span><span>PyTS</span><span>TSFresh</span><span>scikit-learn</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="artificial-intelligence">
+          <div class="project-media" data-media="projects/pelicula.png" data-media-title="Movie Recommendation System">
+            <img src="projects/pelicula.png" alt="Movie recommendation system" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Machine Learning" data-es="Machine Learning">Machine Learning</div>
+            <h3 data-en="Movie Recommendation System Based on Image Clustering" data-es="Sistema de Recomendación de Películas Basado en Agrupamiento de Imágenes">Movie Recommendation System Based on Image Clustering</h3>
+            <p data-en="Unsupervised recommender built on visual features of film posters (HOG, colour and texture), with dimensionality reduction via PCA, LDA and SVD, validated against standard metrics and deployed as an interactive web application." data-es="Recomendador no supervisado construido sobre características visuales de pósters (HOG, color y textura), con reducción de dimensionalidad mediante PCA, LDA y SVD, validado con métricas estándar y desplegado como aplicación web interactiva.">Unsupervised recommender built on visual features of film posters (HOG, colour and texture), with dimensionality reduction via PCA, LDA and SVD, validated against standard metrics and deployed as an interactive web application.</p>
+            <div class="project-meta" data-en="Course: Machine Learning · team project" data-es="Curso: Machine Learning · proyecto en equipo">Course: Machine Learning · team project</div>
+            <div class="tech-row"><span>Python</span><span>HOG</span><span>PCA / LDA / SVD</span><span data-en="Clustering" data-es="Agrupamiento">Clustering</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="artificial-intelligence">
+          <div class="project-media" data-media="projects/imu_anomaly_hitting_arm.png" data-media-title="Industrial Robot Arm Anomaly Classification">
+            <img src="projects/imu_anomaly_hitting_arm.png" alt="IMU anomaly classification on a robotic arm" loading="lazy">
+            <div class="play-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M11 8v6M8 11h6"/></svg></div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Machine Learning · Predictive Maintenance" data-es="Machine Learning · Mantenimiento Predictivo">Machine Learning · Predictive Maintenance</div>
+            <h3 data-en="Multiclass Anomaly Classification for Industrial Robotic Arms" data-es="Clasificación Multiclase de Anomalías en Brazos Robóticos Industriales">Multiclass Anomaly Classification for Industrial Robotic Arms</h3>
+            <p data-en="Detection of anomalies from IMU time series using ROCKET and MiniROCKET with KNN and SVM, tuned for computational efficiency so it can run in real time on embedded systems for predictive maintenance." data-es="Detección de anomalías a partir de series temporales de IMU usando ROCKET y MiniROCKET con KNN y SVM, ajustado para eficiencia computacional de modo que pueda ejecutarse en tiempo real sobre sistemas embebidos para mantenimiento predictivo.">Detection of anomalies from IMU time series using ROCKET and MiniROCKET with KNN and SVM, tuned for computational efficiency so it can run in real time on embedded systems for predictive maintenance.</p>
+            <div class="project-meta" data-en="Course: Machine Learning · team project" data-es="Curso: Machine Learning · proyecto en equipo">Course: Machine Learning · team project</div>
+            <div class="tech-row"><span>ROCKET</span><span>MiniROCKET</span><span>KNN</span><span>SVM</span></div>
+          </div>
+        </article>
+
+      </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <h3 data-en="Franklin Soncco" data-es="Franklin Soncco">Franklin Soncco</h3>
-                    <p data-en="Robotics Researcher & Mechatronics Engineer" data-es="Investigador en Robótica e Ingeniero Mecatrónico">Robotics Researcher & Mechatronics Engineer</p>
-                </div>
-                <div class="footer-right">
-                    <div class="social-links">
-                        <a href="mailto:franklin.soncco@utec.edu.pe" target="_blank" title="Email">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/franklin-david-soncco-machaca/" target="_blank" title="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                        </a>
-                        <a href="https://orcid.org/0009-0009-8311-2465" target="_blank" title="ORCID">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 4.053-1.666 4.053-3.722 0-2.056-1.694-3.722-4.053-3.722h-2.297z"/></svg>
-                        </a>
-                        <a href="https://github.com/FranklinSoncco" target="_blank" title="GitHub">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 <span data-en="Franklin Soncco. All rights reserved." data-es="Franklin Soncco. Todos los derechos reservados.">Franklin Soncco. All rights reserved.</span></p>
-                <!-- <p class="visitor-counter" data-en="Visits: " data-es="Visitas: ">Visits: <span id="visitCount">0</span></p>   -->
-            </div>
+    <section id="business-strategy" class="field-block">
+      <div class="field-head">
+        <span class="field-index">04</span>
+        <div>
+          <h2 class="field-title" data-en="Business &amp; Strategy" data-es="Negocios y Estrategia">Business &amp; Strategy</h2>
+          <p class="field-desc" data-en="Financial and strategic analysis developed in my business-track courses — company performance evaluation, investment appraisal and competitive strategy, applied to real Peruvian firms." data-es="Análisis financiero y estratégico desarrollado en mis cursos de la línea de negocios — evaluación de desempeño empresarial, valoración de inversiones y estrategia competitiva, aplicados a compañías peruanas reales.">Financial and strategic analysis developed in my business-track courses — company performance evaluation, investment appraisal and competitive strategy, applied to real Peruvian firms.</p>
         </div>
-    </footer>
+        <span class="field-count" data-en="3 projects" data-es="3 proyectos">3 projects</span>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="projects-grid">
+
+        <article class="project-card" data-category="business-strategy">
+          <div class="project-media media-figures">
+            <div class="figure">
+              <span class="fig-num">31%</span>
+              <span class="fig-label" data-en="Average ROE" data-es="ROE promedio">Average ROE</span>
+            </div>
+            <div class="figure">
+              <span class="fig-num">21%</span>
+              <span class="fig-label" data-en="Average ROA" data-es="ROA promedio">Average ROA</span>
+            </div>
+            <div class="figure">
+              <span class="fig-num">4.15</span>
+              <span class="fig-label" data-en="Solvency ratio" data-es="Ratio de solvencia">Solvency ratio</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Corporate Finance" data-es="Finanzas Empresariales">Corporate Finance</div>
+            <h3 data-en="Financial Analysis and Performance Evaluation — Compañía Minera Poderosa S.A." data-es="Análisis Financiero y Evaluación de Desempeño — Compañía Minera Poderosa S.A.">Financial Analysis and Performance Evaluation — Compañía Minera Poderosa S.A.</h3>
+            <p data-en="Integral financial analysis of a Peruvian gold mining company with over 3,500 employees, covering 2017–2022. Current ratio improved from 0.57 to 1.50, solvency from 2.92 to 4.15, with ROE averaging 31% and ROA 21%. Included IFRS policy review (IFRS 9, 15, 16; IAS 7, 12; IFRIC 23) and strategic recommendations." data-es="Análisis financiero integral de una minera aurífera peruana con más de 3,500 empleados, para el periodo 2017–2022. La razón circulante mejoró de 0.57 a 1.50 y el ratio de solvencia de 2.92 a 4.15, con ROE promedio de 31% y ROA de 21%. Incluyó la revisión de políticas NIIF (NIIF 9, 15, 16; NIC 7, 12; CINIIF 23) y recomendaciones estratégicas.">Integral financial analysis of a Peruvian gold mining company with over 3,500 employees, covering 2017–2022. Current ratio improved from 0.57 to 1.50, solvency from 2.92 to 4.15, with ROE averaging 31% and ROA 21%. Included IFRS policy review (IFRS 9, 15, 16; IAS 7, 12; IFRIC 23) and strategic recommendations.</p>
+            <div class="project-meta" data-en="Course: Corporate Finance · team project" data-es="Curso: Finanzas Empresariales · proyecto en equipo">Course: Corporate Finance · team project</div>
+            <div class="tech-row"><span>Excel</span><span>IFRS / NIIF</span><span data-en="Ratio analysis" data-es="Análisis de ratios">Ratio analysis</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="business-strategy">
+          <div class="project-media media-figures">
+            <div class="figure">
+              <span class="fig-num">18.17%</span>
+              <span class="fig-label" data-en="Economic IRR" data-es="TIRE">Economic IRR</span>
+            </div>
+            <div class="figure">
+              <span class="fig-num">26.23%</span>
+              <span class="fig-label" data-en="Financial IRR" data-es="TIRF">Financial IRR</span>
+            </div>
+            <div class="figure">
+              <span class="fig-num">14.76%</span>
+              <span class="fig-label" data-en="WACC" data-es="WACC">WACC</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Project Appraisal" data-es="Evaluación de Proyectos">Project Appraisal</div>
+            <h3 data-en="Financial Evaluation and Business Viability — Rancho Chico, La Moyita" data-es="Evaluación Financiera y Análisis de Viabilidad Empresarial — Rancho Chico, La Moyita">Financial Evaluation and Business Viability — Rancho Chico, La Moyita</h3>
+            <p data-en="Five-year appraisal of an artisanal yoghurt producer in Azángaro, Puno, backed by FONCODES. Applied CAPM (16.31% cost of equity) and WACC (14.76%), obtaining an economic NPV of S/ 471.59, IRR of 18.17%, financial NPV of S/ 3,030.25 and IRR of 26.23%, with three-scenario sensitivity analysis identifying a critical inflexion at S/ 6 per unit." data-es="Evaluación a cinco años de una productora de yogurt artesanal en Azángaro, Puno, apoyada por FONCODES. Apliqué CAPM (16.31% de costo de capital propio) y WACC (14.76%), obteniendo un VANE de S/ 471.59, TIRE de 18.17%, VANF de S/ 3,030.25 y TIRF de 26.23%, con análisis de sensibilidad de tres escenarios que identificó un punto de inflexión crítico en S/ 6 por unidad.">Five-year appraisal of an artisanal yoghurt producer in Azángaro, Puno, backed by FONCODES. Applied CAPM (16.31% cost of equity) and WACC (14.76%), obtaining an economic NPV of S/ 471.59, IRR of 18.17%, financial NPV of S/ 3,030.25 and IRR of 26.23%, with three-scenario sensitivity analysis identifying a critical inflexion at S/ 6 per unit.</p>
+            <div class="project-meta" data-en="Course: Financial Evaluation of Projects · team project" data-es="Curso: Evaluación Financiera de Proyectos · proyecto en equipo">Course: Financial Evaluation of Projects · team project</div>
+            <div class="tech-row"><span>CAPM / WACC</span><span>DCF</span><span>Excel</span><span data-en="Linear regression" data-es="Regresión lineal">Linear regression</span></div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="business-strategy">
+          <div class="project-media media-figures">
+            <div class="figure">
+              <span class="fig-num">21</span>
+              <span class="fig-label" data-en="Cities covered" data-es="Ciudades">Cities covered</span>
+            </div>
+            <div class="figure">
+              <span class="fig-num">25%</span>
+              <span class="fig-label" data-en="Lima market share" data-es="Participación Lima">Lima market share</span>
+            </div>
+            <div class="figure">
+              <span class="fig-num">2.60</span>
+              <span class="fig-label" data-en="EFE / EFI score" data-es="Puntaje EFE / EFI">EFE / EFI score</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-kicker" data-en="Strategy &amp; Organisations" data-es="Estrategia y Organizaciones">Strategy &amp; Organisations</div>
+            <h3 data-en="Strategic Analysis and Business Planning — inDrive Perú" data-es="Análisis Estratégico y Planificación Empresarial — inDrive Perú">Strategic Analysis and Business Planning — inDrive Perú</h3>
+            <p data-en="Expansion strategy for a P2P mobility platform present in 21 Peruvian cities with 25% share in Metropolitan Lima, targeting national leadership by 2027. Combined PESTEL, Porter's Five Forces, EFE and EFI matrices (both 2.60), SWOT and CAME, value chain analysis and quantitative segmentation of 924,000 active users, converging on five integrated corporate strategies." data-es="Estrategia de expansión para una plataforma de movilidad P2P presente en 21 ciudades peruanas con 25% de participación en Lima Metropolitana, orientada al liderazgo nacional hacia 2027. Combiné PESTEL, las Cinco Fuerzas de Porter, matrices EFE y EFI (ambas 2.60), FODA y CAME, análisis de cadena de valor y segmentación cuantitativa de 924,000 usuarios activos, converge en cinco estrategias corporativas integradas.">Expansion strategy for a P2P mobility platform present in 21 Peruvian cities with 25% share in Metropolitan Lima, targeting national leadership by 2027. Combined PESTEL, Porter's Five Forces, EFE and EFI matrices (both 2.60), SWOT and CAME, value chain analysis and quantitative segmentation of 924,000 active users, converging on five integrated corporate strategies.</p>
+            <div class="project-meta" data-en="Course: Strategy and Organisations · team project" data-es="Curso: Estrategia y Organizaciones · proyecto en equipo">Course: Strategy and Organisations · team project</div>
+            <div class="tech-row"><span>PESTEL</span><span>Porter</span><span>EFE / EFI</span><span data-en="ABC costing" data-es="Costeo ABC">ABC costing</span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </div>
+</section>
+
+<!-- ================= Technical skills ================= -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title" data-en="Technical Skills" data-es="Habilidades Técnicas">Technical Skills</h2>
+      <p class="section-lead" data-en="Tools and methods applied in laboratory and project work" data-es="Herramientas y métodos aplicados en laboratorio y proyectos">Tools and methods applied in laboratory and project work</p>
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <h3 data-en="Programming &amp; Robotics Frameworks" data-es="Programación y Frameworks de Robótica">Programming &amp; Robotics Frameworks</h3>
+        <ul>
+          <li data-en="Python — primary language for control, perception and machine learning" data-es="Python — lenguaje principal para control, percepción y machine learning">Python — primary language for control, perception and machine learning</li>
+          <li data-en="C, C++, Assembler — embedded firmware and real-time routines" data-es="C, C++, Assembler — firmware embebido y rutinas en tiempo real">C, C++, Assembler — embedded firmware and real-time routines</li>
+          <li data-en="ROS1 and ROS2 — kinematics, dynamics, navigation and control nodes" data-es="ROS1 y ROS2 — cinemática, dinámica, navegación y nodos de control">ROS1 and ROS2 — kinematics, dynamics, navigation and control nodes</li>
+          <li data-en="MATLAB, Simulink, Simscape — modelling and simulation" data-es="MATLAB, Simulink, Simscape — modelado y simulación">MATLAB, Simulink, Simscape — modelling and simulation</li>
+          <li data-en="PyTorch — deep learning implementation" data-es="PyTorch — implementación de deep learning">PyTorch — deep learning implementation</li>
+          <li data-en="Git and GitHub — version control and deployment" data-es="Git y GitHub — control de versiones y despliegue">Git and GitHub — version control and deployment</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3 data-en="Machine Learning &amp; Deep Learning" data-es="Machine Learning y Deep Learning">Machine Learning &amp; Deep Learning</h3>
+        <ul>
+          <li data-en="Supervised, unsupervised and reinforcement learning fundamentals" data-es="Fundamentos de aprendizaje supervisado, no supervisado y por refuerzo">Supervised, unsupervised and reinforcement learning fundamentals</li>
+          <li data-en="CNN architectures — VGG, ResNet, MobileNet, EfficientNet; transfer learning and fine-tuning" data-es="Arquitecturas CNN — VGG, ResNet, MobileNet, EfficientNet; transfer learning y fine-tuning">CNN architectures — VGG, ResNet, MobileNet, EfficientNet; transfer learning and fine-tuning</li>
+          <li data-en="Sequence and attention models — LSTM, GRU, Transformers, ViT, Swin, DETR, MoE" data-es="Modelos secuenciales y de atención — LSTM, GRU, Transformers, ViT, Swin, DETR, MoE">Sequence and attention models — LSTM, GRU, Transformers, ViT, Swin, DETR, MoE</li>
+          <li data-en="Self-supervised and generative — SimCLR, MoCo, CLIP, BERT, MAE, VAE, GAN, diffusion, flow matching" data-es="Autosupervisados y generativos — SimCLR, MoCo, CLIP, BERT, MAE, VAE, GAN, difusión, flow matching">Self-supervised and generative — SimCLR, MoCo, CLIP, BERT, MAE, VAE, GAN, diffusion, flow matching</li>
+          <li data-en="NLP and LLMs — tokenization, embeddings, prompting, chain-of-thought, LoRA / QLoRA, RAG, agents" data-es="NLP y LLMs — tokenización, embeddings, prompting, chain-of-thought, LoRA / QLoRA, RAG, agentes">NLP and LLMs — tokenization, embeddings, prompting, chain-of-thought, LoRA / QLoRA, RAG, agents</li>
+          <li data-en="Graph neural networks — GCN, graph transformers, positional encodings" data-es="Redes neuronales en grafos — GCN, graph transformers, positional encodings">Graph neural networks — GCN, graph transformers, positional encodings</li>
+          <li data-en="Reinforcement learning — Q-learning, DQN, A3C, TD-learning, MuZero" data-es="Aprendizaje por refuerzo — Q-learning, DQN, A3C, TD-learning, MuZero">Reinforcement learning — Q-learning, DQN, A3C, TD-learning, MuZero</li>
+          <li data-en="Time-series classification — ROCKET, MiniROCKET, PyTS, TSFresh" data-es="Clasificación de series temporales — ROCKET, MiniROCKET, PyTS, TSFresh">Time-series classification — ROCKET, MiniROCKET, PyTS, TSFresh</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3 data-en="Control Systems" data-es="Sistemas de Control">Control Systems</h3>
+        <ul>
+          <li data-en="PID, 2-DoF PID, cascade, ratio, split-range, selective and feedforward strategies" data-es="PID, PID de 2 GdL, cascada, razón, rango partido, selectivo y anticipativo">PID, 2-DoF PID, cascade, ratio, split-range, selective and feedforward strategies</li>
+          <li data-en="LQR / LQG, LQR-I, LQG-I and TV-LQR, SISO and MIMO" data-es="LQR / LQG, LQR-I, LQG-I y TV-LQR, SISO y MIMO">LQR / LQG, LQR-I, LQG-I and TV-LQR, SISO and MIMO</li>
+          <li data-en="Model predictive control (MPC / MBPC) and predictive LQR" data-es="Control predictivo basado en modelo (MPC / MBPC) y LQR predictivo">Model predictive control (MPC / MBPC) and predictive LQR</li>
+          <li data-en="Fractional-order control, dead-time compensation, robust SISO IMC" data-es="Control de orden fraccionario, compensación de tiempos muertos, control robusto SISO IMC">Fractional-order control, dead-time compensation, robust SISO IMC</li>
+          <li data-en="Sliding mode control, impedance control and nonlinear stability analysis" data-es="Control por modos deslizantes, control por impedancia y análisis de estabilidad no lineal">Sliding mode control, impedance control and nonlinear stability analysis</li>
+          <li data-en="Trajectory optimisation and optimisation-based control" data-es="Optimización de trayectorias y control basado en optimización">Trajectory optimisation and optimisation-based control</li>
+          <li data-en="Platforms — Quanser Qube-Servo 2, Magnetic Levitation, 2-DOF Robot" data-es="Plataformas — Quanser Qube-Servo 2, Levitación Magnética, 2 DOF Robot">Platforms — Quanser Qube-Servo 2, Magnetic Levitation, 2-DOF Robot</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3 data-en="Industrial Automation &amp; Instrumentation" data-es="Automatización Industrial e Instrumentación">Industrial Automation &amp; Instrumentation</h3>
+        <ul>
+          <li data-en="PLC — Siemens S7-1200 / S7-1500 and Rockwell Allen-Bradley" data-es="PLC — Siemens S7-1200 / S7-1500 y Rockwell Allen-Bradley">PLC — Siemens S7-1200 / S7-1500 and Rockwell Allen-Bradley</li>
+          <li data-en="TIA Portal (Ladder), Studio 5000 (Ladder), Codesys (Ladder, ST, SFC)" data-es="TIA Portal (Ladder), Studio 5000 (Ladder), Codesys (Ladder, ST, SFC)">TIA Portal (Ladder), Studio 5000 (Ladder), Codesys (Ladder, ST, SFC)</li>
+          <li data-en="SCADA supervision and safety interlock design" data-es="Supervisión SCADA y diseño de interlocks de seguridad">SCADA supervision and safety interlock design</li>
+          <li data-en="P&amp;ID to ISA standards, TAG lists, instrument datasheets and Applicator sizing" data-es="P&amp;ID según normas ISA, listados de TAGs, hojas de datos de instrumentos y dimensionamiento con Applicator">P&amp;ID to ISA standards, TAG lists, instrument datasheets and Applicator sizing</li>
+          <li data-en="Instrumentation — Endress+Hauser, SITRANS, FESTO, Schneider Electric" data-es="Instrumentación — Endress+Hauser, SITRANS, FESTO, Schneider Electric">Instrumentation — Endress+Hauser, SITRANS, FESTO, Schneider Electric</li>
+          <li data-en="Industrial networks — PROFINET, Ethernet/IP, MODBUS TCP/RTU/ASCII, PROFIBUS, HART, ASInterface, CANopen, IO-Link" data-es="Redes industriales — PROFINET, Ethernet/IP, MODBUS TCP/RTU/ASCII, PROFIBUS, HART, ASInterface, CANopen, IO-Link">Industrial networks — PROFINET, Ethernet/IP, MODBUS TCP/RTU/ASCII, PROFIBUS, HART, ASInterface, CANopen, IO-Link</li>
+          <li data-en="MQTT over Amazon AWS — topic creation and broker-mediated messaging" data-es="MQTT sobre Amazon AWS — creación de tópicos y mensajería mediante bróker">MQTT over Amazon AWS — topic creation and broker-mediated messaging</li>
+          <li data-en="FESTO MECLAB and FLUIDSIM 6 — pneumatic and hydraulic circuit design" data-es="FESTO MECLAB y FLUIDSIM 6 — diseño de circuitos neumáticos e hidráulicos">FESTO MECLAB and FLUIDSIM 6 — pneumatic and hydraulic circuit design</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3 data-en="Electronics &amp; Embedded Systems" data-es="Electrónica y Sistemas Embebidos">Electronics &amp; Embedded Systems</h3>
+        <ul>
+          <li data-en="Microcontrollers — ATmega328p, PSoC 5LP, ESP32, Raspberry Pi 4, NI MyRIO" data-es="Microcontroladores — ATmega328p, PSoC 5LP, ESP32, Raspberry Pi 4, NI MyRIO">Microcontrollers — ATmega328p, PSoC 5LP, ESP32, Raspberry Pi 4, NI MyRIO</li>
+          <li data-en="FPGA — Basys 3 Artix-7, VHDL and Vivado" data-es="FPGA — Basys 3 Artix-7, VHDL y Vivado">FPGA — Basys 3 Artix-7, VHDL and Vivado</li>
+          <li data-en="UART communication, interrupts, counters and register-level programming" data-es="Comunicación UART, interrupciones, contadores y programación a nivel de registros">UART communication, interrupts, counters and register-level programming</li>
+          <li data-en="Circuit design and simulation — NI Multisim, EasyEDA, Tinkercad, NI ELVIS" data-es="Diseño y simulación de circuitos — NI Multisim, EasyEDA, Tinkercad, NI ELVIS">Circuit design and simulation — NI Multisim, EasyEDA, Tinkercad, NI ELVIS</li>
+          <li data-en="Altium Designer — professional PCB design, applied to rocket avionics" data-es="Altium Designer — diseño profesional de PCB, aplicado a la aviónica del cohete">Altium Designer — professional PCB design, applied to rocket avionics</li>
+          <li data-en="LabVIEW — instrumentation and data acquisition" data-es="LabVIEW — instrumentación y adquisición de datos">LabVIEW — instrumentation and data acquisition</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3 data-en="CAD, Simulation &amp; Mechanical Design" data-es="CAD, Simulación y Diseño Mecánico">CAD, Simulation &amp; Mechanical Design</h3>
+        <ul>
+          <li data-en="Autodesk Inventor — assemblies, fabrication drawings and general design" data-es="Autodesk Inventor — ensambles, planos de fabricación y diseño general">Autodesk Inventor — assemblies, fabrication drawings and general design</li>
+          <li data-en="Autodesk Fusion — industrial process and mechanism design" data-es="Autodesk Fusion — diseño de procesos industriales y mecanismos">Autodesk Fusion — industrial process and mechanism design</li>
+          <li data-en="Finite element analysis with parametric, shape and topology optimisation" data-es="Análisis por elementos finitos con optimización paramétrica, de forma y topológica">Finite element analysis with parametric, shape and topology optimisation</li>
+          <li data-en="FESTO PARTdataManager — sensor and actuator component selection" data-es="FESTO PARTdataManager — selección de componentes de sensores y actuadores">FESTO PARTdataManager — sensor and actuator component selection</li>
+          <li data-en="Technical drawing standards, descriptive geometry and mechanical design" data-es="Normas de dibujo técnico, geometría descriptiva y diseño mecánico">Technical drawing standards, descriptive geometry and mechanical design</li>
+        </ul>
+      </div>
+
+      <div class="skill-group">
+        <h3 data-en="Data, Documentation &amp; Business Tools" data-es="Datos, Documentación y Herramientas de Negocio">Data, Documentation &amp; Business Tools</h3>
+        <ul>
+          <li data-en="SQL — Stanford Advanced Topics in SQL and HarvardX CS50 SQL" data-es="SQL — Stanford Advanced Topics in SQL y HarvardX CS50 SQL">SQL — Stanford Advanced Topics in SQL and HarvardX CS50 SQL</li>
+          <li data-en="Microsoft Power BI — data analysis and reporting" data-es="Microsoft Power BI — análisis de datos y reportería">Microsoft Power BI — data analysis and reporting</li>
+          <li data-en="Excel — financial modelling, NPV / IRR, scenario and sensitivity analysis" data-es="Excel — modelado financiero, VAN / TIR, análisis de escenarios y sensibilidad">Excel — financial modelling, NPV / IRR, scenario and sensitivity analysis</li>
+          <li data-en="RStudio — statistics, probability and analytical figures" data-es="RStudio — estadística, probabilidad y figuras analíticas">RStudio — statistics, probability and analytical figures</li>
+          <li data-en="LaTeX — articles, technical reports and presentations" data-es="LaTeX — artículos, informes técnicos y presentaciones">LaTeX — articles, technical reports and presentations</li>
+          <li data-en="Diagramming and design — Lucidchart, DrawIO, Inkscape, Canva, Padlet" data-es="Diagramación y diseño — Lucidchart, DrawIO, Inkscape, Canva, Padlet">Diagramming and design — Lucidchart, DrawIO, Inkscape, Canva, Padlet</li>
+          <li data-en="Microsoft 365 and Google Workspace; Zoom, Meet, Teams, Webex" data-es="Microsoft 365 y Google Workspace; Zoom, Meet, Teams, Webex">Microsoft 365 and Google Workspace; Zoom, Meet, Teams, Webex</li>
+          <li data-en="Web deployment — HTML, CSS, WordPress, GitHub Pages, Namecheap" data-es="Despliegue web — HTML, CSS, WordPress, GitHub Pages, Namecheap">Web deployment — HTML, CSS, WordPress, GitHub Pages, Namecheap</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3 class="footer-name">Franklin David Soncco Machaca</h3>
+        <p class="footer-role" data-en="Mechatronics Engineer — Robotics, Industrial Automation &amp; Artificial Intelligence" data-es="Ingeniero Mecatrónico — Robótica, Automatización Industrial e Inteligencia Artificial">Mechatronics Engineer — Robotics, Industrial Automation &amp; Artificial Intelligence</p>
+      </div>
+      <div class="social-links">
+        <a href="mailto:franklin.soncco@utec.edu.pe" title="Email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/franklin-david-soncco-machaca/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.47-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="https://orcid.org/0009-0009-8311-2465" target="_blank" rel="noopener" title="ORCID" aria-label="ORCID">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0ZM7.37 4.38a.95.95 0 1 1 0 1.9.95.95 0 0 1 0-1.9Zm-.72 3.04h1.44v10.04H6.65V7.42Zm3.56 0h3.9c3.71 0 5.34 2.65 5.34 5.02 0 2.58-2.02 5.02-5.32 5.02h-3.92V7.42Zm1.44 1.3v7.44h2.3c2.36 0 4.05-1.67 4.05-3.72s-1.69-3.72-4.05-3.72h-2.3Z"/></svg>
+        </a>
+        <a href="https://github.com/FranklinSoncco" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.79-.26.79-.58v-2.23c-3.34.73-4.03-1.41-4.03-1.41-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.19.7.8.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2026 Franklin David Soncco Machaca" data-es="© 2026 Franklin David Soncco Machaca">© 2026 Franklin David Soncco Machaca</p>
+      <p data-en="Lima, Peru" data-es="Lima, Perú">Lima, Peru</p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="mediaModal" role="dialog" aria-modal="true" aria-label="Media viewer">
+  <div class="modal-shell">
+    <div class="modal-bar">
+      <span class="modal-title"></span>
+      <div class="modal-tools">
+        <a class="btn btn-sm modal-open-new" href="#" target="_blank" rel="noopener" data-en="Open in new tab" data-es="Abrir en pestaña nueva">Open in new tab</a>
+        <button class="modal-close" aria-label="Close">&times;</button>
+      </div>
+    </div>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
